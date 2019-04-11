@@ -8,19 +8,19 @@
 
 namespace App\Controller;
 
-class HomeController extends AbstractController
+class AdminController extends AbstractController
 {
 
     /**
-     * Display home page
+     * Display admin page
      *
      * @return string
      * @throws \Twig\Error\LoaderError
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    public function index()
+    public function indexadmin()
     {
-        return $this->twig->render('Home/index.html.twig');
+        return $this->twig->render('Admin/indexadmin.html.twig');
     }
 }
