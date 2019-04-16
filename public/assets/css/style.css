@@ -67,6 +67,11 @@ h1, h2, h3, h4, h5,
 }
 
 /***Header style ***/
+
+.jumbotron-fluid{
+    background-image: url('../images/avion2flip.jpg');
+}
+
 .title{
     font-size: 6rem;
     color: #0f3d7f;
@@ -74,6 +79,8 @@ h1, h2, h3, h4, h5,
     font-family: "Android Assassin";
     line-height: 1.4;
     text-shadow: 0.1em 0.1em #FFFFFF;
+    padding-left: 10%;
+    padding-bottom: 7%;
 
 }
 
@@ -85,12 +92,11 @@ h1, h2, h3, h4, h5,
     line-height: 1.4;
     color: #FFFFFF;
     font-weight: 400;
-    padding-top: 9%;
 }
 
 .logo{
     padding-left: 2%;
-    padding-top: 3%;
+    padding-top: 1%;
 }
 
 @media (max-width: 767.98px) {
