@@ -33,12 +33,12 @@ span {
 
 a {
     transition: .3s all ease;
-    color: #fa5bdd;
+    color: #407dde;
 }
 
 a:hover {
     text-decoration: none;
-    color: #fa5bdd;
+    color: #407dde;
 }
 
 h1, h2, h3, h4, h5,
@@ -49,7 +49,7 @@ h1, h2, h3, h4, h5,
 }
 
 .text-primary {
-    color: #fa5bdd;
+    color: #407dde;
 }
 
 /*****Class ftco style *****/
@@ -66,14 +66,17 @@ h1, h2, h3, h4, h5,
     padding-bottom: .9rem;
     padding-left: 0;
     padding-right: 0;
-    color: rgba(255, 255, 255, 0.9);
     font-weight: 400;
     text-transform: uppercase;
     opacity: 1;
 }
 
+.ftco-navbar-light .navbar-brand:hover {
+    color: #407dde;
+}
+
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-    color: #fa5bdd;
+    color: #407dde;
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator {
@@ -107,9 +110,8 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item.cta > a {
-    color: #fff;
-    border: 1px solid #fa5bdd;
-    background: #fa5bdd;
+    border: 1px solid #407dde;
+    background: #407dde;
     padding-top: .5rem;
     padding-bottom: .5rem;
     padding-left: 20px;
@@ -119,15 +121,15 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item.cta > a:hover {
-    border: 1px solid #fa5bdd;
+    border: 1px solid #407dde;
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored span {
-    border-color: #fa5bdd;
+    border-color: #407dde;
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: #fa5bdd;
+    color: #407dde;
 }
 
 .ftco-navbar-light .navbar-toggler {
@@ -169,7 +171,7 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-social a span {
-    color: #fa5bdd;
+    color: #407dde;
 }
 
 /*******Navbar Style *******/
@@ -180,12 +182,12 @@ h1, h2, h3, h4, h5,
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1;
-    color: #fff;
+    color: #000000;
 }
 
-.navbar-brand i {
-    color: #fa5bdd;
-    font-size: 30px;
+.navbar-toggler i {
+    color: #407dde;
+    font-size: 20px;
 }
 
 /******Class Hero style *****/
@@ -266,7 +268,7 @@ h1, h2, h3, h4, h5,
 }
 
 .slider-text .btn-outline-white:hover span {
-    color: #fa5bdd;
+    color: #407dde;
 }
 
 /*******Background Style *****/
@@ -276,7 +278,7 @@ h1, h2, h3, h4, h5,
 }
 
 .bg-primary {
-    background: #fa5bdd;
+    background: #407dde;
 }
 
 /******Button style *****/
@@ -293,25 +295,25 @@ h1, h2, h3, h4, h5,
 }
 
 .btn.btn-primary {
-    background: #fa5bdd;
-    border: 1px solid #fa5bdd;
+    background: #407dde;
+    border: 1px solid #407dde;
     color: #fff;
 }
 
 .btn.btn-primary:hover {
-    border: 1px solid #fa5bdd;
-    color: #fa5bdd;
+    border: 1px solid #407dde;
+    color: #407dde;
 }
 
 .btn.btn-primary.btn-outline-primary {
-    border: 1px solid #fa5bdd;
+    border: 1px solid #407dde;
     background: transparent;
-    color: #fa5bdd;
+    color: #407dde;
 }
 
 .btn.btn-primary.btn-outline-primary:hover {
     border: 1px solid transparent;
-    background: #fa5bdd;
+    background: #407dde;
     color: #fff;
 }
 
@@ -337,7 +339,7 @@ h1, h2, h3, h4, h5,
 .btn.btn-white.btn-outline-white:hover, .btn.btn-white.btn-outline-white:focus, .btn.btn-white.btn-outline-white:active {
     background: #fff;
     border-color: #fff;
-    color: #fa5bdd;
+    color: #407dde;
 }
 
 .btn.btn-outline-black {
@@ -358,7 +360,7 @@ h1, h2, h3, h4, h5,
 .services .icon span {
     margin: 0 auto;
     font-size: 40px;
-    color: #fa5bdd;
+    color: #407dde;
 }
 
 .services h3 {
@@ -469,7 +471,7 @@ h1, h2, h3, h4, h5,
 .pricing-entry p .price {
     font-weight: 400;
     font-size: 20px;
-    color: #fa5bdd;
+    color: #407dde;
 }
 
 .pricing-entry p .per {
@@ -513,22 +515,22 @@ h1, h2, h3, h4, h5,
 }
 
 .pricing-entry:hover, .pricing-entry:focus {
-    border: 1px solid #fa5bdd;
+    border: 1px solid #407dde;
 }
 
 .pricing-entry:hover .button .btn.btn-outline-primary, .pricing-entry:focus .button .btn.btn-outline-primary {
-    background: #fa5bdd;
-    border: 1px solid #fa5bdd;
+    background: #407dde;
+    border: 1px solid #407dde;
     color: #fff;
 }
 
 .pricing-entry.active {
-    border: 1px solid #fa5bdd;
+    border: 1px solid #407dde;
 }
 
 .pricing-entry.active .button .btn.btn-outline-primary {
-    background: #fa5bdd;
-    border: 1px solid #fa5bdd;
+    background: #407dde;
+    border: 1px solid #407dde;
     color: #fff;
 }
 
@@ -581,7 +583,7 @@ h1, h2, h3, h4, h5,
 }
 
 .staff:hover .img, .staff:focus .img {
-    border: 1px solid #fa5bdd;
+    border: 1px solid #407dde;
 }
 
 /*****Class discount style ****/
@@ -665,7 +667,7 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-footer a:hover {
-    color: #fa5bdd;
+    color: #407dde;
 }
 
 .ftco-footer .ftco-heading-2 {
@@ -684,7 +686,7 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-footer .block-21 .text .heading a:hover, .ftco-footer .block-21 .text .heading a:active, .ftco-footer .block-21 .text .heading a:focus {
-    color: #fa5bdd;
+    color: #407dde;
 }
 
 .ftco-footer .block-21 .text .meta > div {
@@ -808,7 +810,7 @@ h1, h2, h3, h4, h5,
 }
 
 .block-21 .text .heading a:hover, .block-21 .text .heading a:active, .block-21 .text .heading a:focus {
-    color: #fa5bdd;
+    color: #407dde;
 }
 
 .block-21 .text .meta > div {
