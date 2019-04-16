@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5,
 }
 
 .title{
-    font-size: 6rem;
+    font-size: calc(5vw + 14pt);
     color: #0f3d7f;
     text-transform: uppercase;
     font-family: "Android Assassin";
@@ -86,7 +86,7 @@ h1, h2, h3, h4, h5,
 
 .title2{
 
-    font-size: 3vw;
+    font-size: calc(2vw + 7pt);
     text-shadow: 0.1em 0.1em #0f3d7f;
     font-family: "Alien Robot";
     line-height: 1.4;
@@ -99,14 +99,6 @@ h1, h2, h3, h4, h5,
     padding-top: 1%;
 }
 
-@media (max-width: 767.98px) {
-    .title {
-        font-size: 2.5rem;
-    }
-    .title2 {
-        font-size: 1rem;
-    }
-}
 
 .hero-wrap {
     position: relative;
