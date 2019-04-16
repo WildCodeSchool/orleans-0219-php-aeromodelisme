@@ -27,6 +27,20 @@ body.menu-show {
     width: 100%;
 }
 
+@font-face {
+    font-family: "Alien Robot";
+    src: url("../fonts/Alien Robot.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Android Assassin";
+    src: url("../fonts/Android Assassin.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 span {
     color: #bfbfbf;
 }
@@ -51,6 +65,49 @@ h1, h2, h3, h4, h5,
 .text-primary {
     color: #fa5bdd;
 }
+
+/***Header style ***/
+.title{
+    font-size: 6rem;
+    color: #0f3d7f;
+    text-transform: uppercase;
+    font-family: "Android Assassin";
+    line-height: 1.4;
+    text-shadow: 0.1em 0.1em #FFFFFF;
+
+}
+
+.title2{
+
+    font-size: 3vw;
+    text-shadow: 0.1em 0.1em #0f3d7f;
+    font-family: "Alien Robot";
+    line-height: 1.4;
+    color: #FFFFFF;
+    font-weight: 400;
+    padding-top: 9%;
+}
+
+.logo{
+    padding-left: 2%;
+    padding-top: 3%;
+}
+
+@media (max-width: 767.98px) {
+    .title {
+        font-size: 2.5rem;
+    }
+    .title2 {
+        font-size: 1rem;
+    }
+}
+
+.hero-wrap {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 /*****Class ftco style *****/
 
@@ -199,17 +256,6 @@ h1, h2, h3, h4, h5,
     background-position: center center;
 }
 
-.hero-wrap .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    content: '';
-    opacity: .1;
-    background: #000;
-}
-
 /******Slider Style *****/
 
 .slider-text {
@@ -233,7 +279,7 @@ h1, h2, h3, h4, h5,
     font-size: 38px;
 }
 
-.slider-text h1 {
+.slider-text {
     font-size: 60px;
     color: #fff;
     line-height: 1.2;
