@@ -142,6 +142,10 @@ h1, h2, h3, h4, h5,
     letter-spacing: .1em;
 }
 
+.embed-responsive > img{
+    max-width: 100%;
+}
+
 .ftco-partner {
     padding: 2em 0;
 }
