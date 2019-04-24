@@ -10,23 +10,23 @@
             <div class="carousel-item row no-gutters active">
                 {% for partner in  partners %}
                     {% if partner.id < 6 %}
-                        <div class="col-1 col-md-2 float-left"><img class="img-fluid"
+                        <div class="col-1 col-md-2 ml-md-4 float-left"><img class="img-fluid"
                                                            src="/assets/images/partner/{{ partner.image }}"
                                                            alt="{{ partner.name }}"></div>
                     {% endif %}
                 {% endfor %}
             </div>
 
-{#            <div class="carousel-item row no-gutters justify-content-center">
+            <div class="carousel-item row no-gutters">
                 {% for partner in  partners %}
                     {% if partner.id > 6 and partner.id < 13 %}
-                        <div class="col-1 col-md-2 ml-md-2 float-left"><img class="img-fluid"
+                        <div class="col-1 col-md-2 ml-md-4 float-left"><img class="img-fluid"
                                                            src="/assets/images/partner/{{ partner.image }}"
                                                            alt="{{ partner.name }}"></div>
                     {% endif %}
 
                 {% endfor %}
-            </div>#}
+            </div>
 
         </div>
         <a class="carousel-control-prev" href="#recipeCarousel" role="button" data-slide="prev">
