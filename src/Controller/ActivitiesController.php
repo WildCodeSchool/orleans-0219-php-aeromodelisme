@@ -2,7 +2,7 @@
 
 namespace App\Controller;
 
-class ActivitesController extends AbstractController
+class ActivitiesController extends AbstractController
 {
     /**
      * @return string
@@ -12,6 +12,6 @@ class ActivitesController extends AbstractController
      */
     public function index()
     {
-        return $this->twig->render('Activites/index.html.twig');
+        return $this->twig->render('Activities/index.html.twig');
     }
 }
