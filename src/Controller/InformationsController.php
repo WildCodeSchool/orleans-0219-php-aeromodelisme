@@ -1,5 +1,6 @@
 <?php
 namespace App\Controller;
+
 class InformationsController extends AbstractController
 {
     /**
