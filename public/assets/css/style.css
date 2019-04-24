@@ -973,8 +973,13 @@ h1, h2, h3, h4, h5,
 }
 
 .carousel-item img{
-    width: 8vw;
-    height: 10vh;
+    width: 100%;
+    height: 20vh;
     object-fit: contain;
-    margin-left: 8rem;
+    margin-left: 6rem;
+}
+
+.partner_title{
+    font-family: "Alien Robot";
+    font-size: 2rem;
 }
