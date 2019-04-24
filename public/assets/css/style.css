@@ -967,3 +967,14 @@ h1, h2, h3, h4, h5,
     color: black;
     border-color: black;
 }
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    filter: invert(100%);
+}
+
+.carousel-item img{
+    width: 8vw;
+    height: 10vh;
+    object-fit: contain;
+    margin-left: 8rem;
+}
