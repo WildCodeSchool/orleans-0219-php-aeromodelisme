@@ -888,6 +888,12 @@ h1, h2, h3, h4, h5,
 }
 
 /**Activities Style**/
+.title_act{
+    font-family: "Alien Robot";
+    src: url("../fonts/Alien Robot.otf");
+    font-size: 1.5rem;
+}
+
 .ftco-section {
     padding: 5em 0;
     position: relative;
@@ -921,8 +927,8 @@ h1, h2, h3, h4, h5,
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    -webkit-transition: all .5s;
-    transition: all .5s;
+    -webkit-transition: all .4s;
+    transition: all .4s;
 }
 
 .circle {
