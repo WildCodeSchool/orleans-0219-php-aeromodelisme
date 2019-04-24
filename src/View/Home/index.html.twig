@@ -16,8 +16,7 @@
             </div>
         </div>
     </section>
-     <section class="ftco-section">
-
+    <section class="ftco-section">
         <div class="container">
             <div class="row">
 
@@ -46,9 +45,7 @@
                     <h3>Interieur</h3>
                 </div>
             </div>
-
         </div>
-
     </section>
     <section class="ftco-section bg-grey py-5">
         <a href="https://www.tameteo.com/meteo_Saint+Jean+de+la+Ruelle-Europe-France-Loiret--1-24379.html" target="_blank" class="container embed-responsive text-center pt-5">
@@ -56,7 +53,27 @@
         </a>
     </section>
     
- <section class="ftco-section bg-grey text-center ">
+   <section class="ftco-section bg-grey">
+      <div class="container">
+         <div class="events">
+            <div class="row justify-content-around">
+                {% for event in events %}
+                   <div class="col-12 col-lg-5 staff">
+                        <div class="card">
+                            <img class="card-img-top" src="{{ event.picture }}" alt="affiche evenement">
+                               <div class="card-body">
+                                  <p>{{ event.date }}</p>
+                                  <h4 class="card-title">{{ event.title }}</h4>
+                                  <p class="card-text">{{ event.description }}</p>
+                                </div>
+                          </div>
+                     </div>
+                  {% endfor %}
+              </div>
+           </div>
+        </div>
+     </section>      
+     <section class="ftco-section bg-grey text-center ">
         <h3 class="title3 pb-4">La video des 40ans !</h3>
         <div class="container embed-responsive embed-responsive-16by9">
             <iframe class="embed-responsive-item" width="560" height="315"
@@ -64,8 +81,6 @@
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
         </div>
-    </section>
-
-
+     </section>
 {% endblock %}
 
