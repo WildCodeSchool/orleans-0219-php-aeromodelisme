@@ -108,6 +108,10 @@ h1, h2, h3, h4, h5,
 
 /***** Activities page *****/
 
+.activitiesPage{
+    background-image:linear-gradient(white, cadetblue);
+}
+
 .activitiesTitle{
     justify-content: center;
     margin-top: 3%;
@@ -115,7 +119,7 @@ h1, h2, h3, h4, h5,
     margin-bottom: 5%;
     font-family: "Alien Robot";
     font-size: calc(2vw + 24pt);
-    color: black;
+    color: #0f3d7f;
 }
 
 .cardActivities2{
@@ -125,8 +129,8 @@ h1, h2, h3, h4, h5,
 
 .activitieTitle{
     font-family: "Alien Robot";
-    color: #687276;
     margin-top: 3vw;
+    color: red;
 }
 
 .textActivities{
