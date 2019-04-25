@@ -891,3 +891,7 @@ hr{
     color: black;
     border-color: black;
 }
+
+.inscription{
+    font-size: 1rem;
+}
