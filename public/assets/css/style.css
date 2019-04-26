@@ -125,7 +125,7 @@ h1, h2, h3, h4, h5,
     justify-content: center;
     margin-top: 3%;
     font-family: "Alien Robot";
-    color: black;
+    color: red;
 }
 
 .terrainTitle{
@@ -133,7 +133,7 @@ h1, h2, h3, h4, h5,
     margin-top: 3%;
     text-align: center;
     font-family: "Alien Robot";
-    color: black;
+    color: #0f3d7f;
 }
 
 .terrainText{
@@ -146,7 +146,7 @@ h1, h2, h3, h4, h5,
     margin-top: 3%;
     text-align: center;
     font-family: "Alien Robot";
-    color: black;
+    color: red;
 }
 
 .containerInformation{
