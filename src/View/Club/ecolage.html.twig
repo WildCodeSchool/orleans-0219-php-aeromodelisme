@@ -1,0 +1,278 @@
+{% extends 'userlayout.html.twig' %}
+{% block stylesheet %} <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">{% endblock %}
+{% block content %}
+    <div class="container p-0">
+        <div class="row justify-content-center">
+            <div class="col-12">
+            <h2 class="title3 text-center mt-5 mb-5">Ecolage</h2>
+            </div>
+            <div class="col-12 col-md-8 p-5">
+                <p class="ecolage-text text-justify">
+                    <span>
+                        Cette prestation totalement gratuite est réservée
+                        à tous les membres du club, des plus jeunes aux
+                        plus anciens. Les séances d'écolage ont lieu toute
+                        l'année.
+                        Cette section accueille en moyenne une vingtaine
+                        de licenciés chaque année. Agréé centre de formation
+                        par la FFAM, l'écolage au RCMCO vous enseignera
+                        à être autonome rapidement et en toute sécurité.
+                    </span>
+                </p>
+            </div>
+            <div class="col-12 col-md-4 pl-5">
+                <img src="/assets/images/logo-ffam.png">
+            </div>
+
+
+        </div>
+        <div class="row justify-content-center">
+            <h3 class="title3 mt-5 mb-5">Organisation ecolage 2019</h3>
+            <div class="col-12 p-0">
+                <table class="ecolage-table d-none d-md-block mt-5 mb-5">
+                    <thead>
+                    <tr>
+                        <th class=" col-2 bg-danger" scope="col">Jours & Horaires</th>
+                        <th class=" col-2 bg-danger " scope="col">Activité</th>
+                        <th class=" col-2 bg-danger" scope="col">lieux</th>
+                        <th class=" col-2 bg-danger" scope="col">Moniteur</th>
+                        <th class=" col-2 bg-danger" scope="col">Contact</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="bg-white">
+                        <td>Mercredi Après-midi</td>
+                        <td>Avion/Planeur</td>
+                        <td>Queue de Forêt</td>
+                        <td>Bertrand HOUDIN</td>
+                       <td class="contact"><i class=" far fa-envelope mr-2"></i>ecolage-responsable@rcmco.fr</td>
+                    </tr>
+                    <tr>
+                        <td>Mercredi Après-midi</td>
+                        <td>Avion</td>
+                        <td>Queue de Forêt</td>
+                        <td>Philippe LALUQUE</td>
+                        <td class="contact"><i class="far fa-envelope mr-2"></i>philippe_laluque@orange.fr</td>
+                    </tr>
+                    <tr class="bg-white">
+                        <td>Mercredi Après-midi</td>
+                        <td>Drone/Fpv</td>
+                        <td>Queue de Forêt</td>
+                        <td>Christophe ORGEVAL</td>
+                        <td class="contact" data-label="Contact"><i class="far fa-envelope mr-2"></i>christophe.orgeval@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td  data-label="Jour&Horaire">Samedi Matin</td>
+                        <td data-label="Activité">Avion</td>
+                        <td data-label="lieu">Queue de Forêt</td>
+                        <td data-label="Moniteur">William OROUSSET</td>
+                        <td class="contact" data-label="Contact"><i class="far fa-envelope mr-2"></i>william4545@hotmail.fr</td>
+                    </tr>
+                    <tr class="bg-white">
+                        <td  data-label="Jour&Horaire">Samedi Matin</td>
+                        <td data-label="Activité">Avion</td>
+                        <td data-label="lieu">Queue de Forêt</td>
+                        <td data-label="Moniteur">Philippe LALUQUE</td>
+                        <td class="contact" data-label="Contact"><i class="far fa-envelope mr-2"></i>philippe_laluque@orange.fr</td>
+                    </tr>
+                    <tr>
+                        <td  data-label="Jour&Horaire">Samedi Matin</td>
+                        <td data-label="Activité">Hélico</td>
+                        <td data-label="lieu">Queue de Forêt</td>
+                        <td data-label="Moniteur">Laurent LEFEBVRE</td>
+                        <td class="contact" data-label="Contact"><i class="far fa-envelope mr-2"></i>dedellolo@gmail.com</td>
+                    </tr>
+                    <tr class="bg-white">
+                        <td data-label="Jour&Horaire">Samedi Matin</td>
+                        <td data-label="Activité">Hélico</td>
+                        <td data-label="lieu">Queue de Forêt</td>
+                        <td data-label="Moniteur">Romain FOLTIER</td>
+                        <td class="contact" data-label="Contact"><i class="far fa-envelope mr-2"></i>romain.foltier@hotmail.fr</td>
+                    </tr>
+                    <tr>
+                        <td  data-label="Jour&Horaire">Dimanche Après-midi</td>
+                        <td data-label="Activité">Avion</td>
+                        <td data-label="lieu">Queue de Forêt</td>
+                        <td data-label="Moniteur">Walter GUT</td>
+                        <td class="contact" data-label="Contact"><i class="far fa-envelope mr-2"></i>walter.gut@free.fr</td>
+                    </tr>
+                    <tr class="bg-white">
+                        <td  data-label="Jour&Horaire">Dimanche Après-midi</td>
+                        <td data-label="Activité">Avion indoor</td>
+                        <td data-label="lieu">Gymnase des 3 fontaine</td>
+                        <td data-label="Moniteur">Bertrand HOUDIN</td>
+                        <td class="contact" data-label="Contact"><i class="far fa-envelope mr-2"></i>ecolage-responsable@rcmco.fr</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="ecolage d-md-none row justify-content-center">
+                    <div class="info col-12 text-center card mt-5 mb-5" >
+                        <div class="card-body p-0">
+                            <h5 class="card-title p-2 mb-4 bg-danger">Mercredi Après-midi</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Lieu : Queue de forêt </h6>
+                            <p class="card-text">
+                                Activité : Avion/Planeur <br>
+                                Moniteur : Bertand HOUDIN <br>
+                                <i class="far fa-envelope"></i> ecolage-responsable@rcmco.fr
+                            </p>
+                            <hr class="hr-card">
+                            <p class="card-text">
+                                Activité : Avion <br>
+                                Moniteur : Philippe LALUQUE <br>
+                                <i class="far fa-envelope"></i> philippe_laluque@orange.fr
+                            </p>
+                            <hr class="hr-card">
+                            <p class="card-text">
+                                Activité : Drone/Fpv <br>
+                                Moniteur : Christophe ORGEVAL <br>
+                                <i class="far fa-envelope"></i> christophe.orgeval@gmail.com
+                            </p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                        </div>
+                    </div>
+                    <div class="info col-12 text-center card mt-5 mb-5" >
+                        <div class="card-body p-0">
+                            <h5 class="card-title p-2 bg-danger mb-4">Samedi Matin</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Lieu : Queue de forêt </h6>
+                            <p class="card-text">
+                                Activité : Avion <br>
+                                Moniteur : William OROUSSET <br>
+                                <i class="far fa-envelope"></i> william4545@hotmail.fr
+                            </p>
+                            <hr class="hr-card">
+                            <p class="card-text">
+                                Activité : Avion <br>
+                                Moniteur : Philippe LALUQUE <br>
+                                <i class="far fa-envelope"></i> philippe_laluque@orange.fr
+                            </p>
+                            <hr class="hr-card">
+                            <p class="card-text">
+                                Activité : Hélico <br>
+                                Moniteur : Laurent LEFEBVRE <br>
+                                <i class="far fa-envelope"></i> dedellolo@gmail.com
+                            </p>
+                            <hr class="hr-card">
+                            <p class="card-text">
+                                Activité : Hélico <br>
+                                Moniteur : Romain FOLTIER <br>
+                                <i class="far fa-envelope"></i> romain.foltier@hotmail.fr
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="info col-12 text-center card mt-5 mb-5" >
+                        <div class="card-body p-0">
+                            <h5 class="card-title p-2 mb-4 bg-danger">Dimanche Après-midi</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Lieu : Queue de forêt </h6>
+                            <p class="card-text">
+                                Activité : Avion <br>
+                                Moniteur : Walter GUT <br>
+                                <i class="far fa-envelope"></i> walter.gut@free.fr
+                            </p>
+                            <hr class="hr-card">
+                            <h6 class="card-subtitle mb-2 text-muted">Lieu : Gymnase des 3 fontaines </h6>
+                            <p class="card-text">
+                                Activité : Avion indoor <br>
+                                Moniteur : Bertrand HOUDIN <br>
+                                <i class="far fa-envelope"></i> ecolage-responsable@rcmco.fr
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h3 class="title3 mt-5 mb-5 text-center"> Les brevets et qualifications </h3>
+        <table class="ecolage-table col-12 d-none d-md-table">
+            <thead>
+                <tr>
+                    <th  class="ecolage-table bg-danger" scope="col">Ailes et Rotors</th>
+                    <th  class="ecolage-table bg-danger" scope="col">Brevets</th>
+                    <th  class="ecolage-table bg-danger" scope="col">qualifications</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="bg-white">
+                    <td>Aile de Bronze</td>
+                    <td>Brevet A Avion</td>
+                    <td>QPDD Avion statuts</td>
+                </tr>
+                <tr>
+                    <td>Rotor de Bronze</td>
+                    <td>Brevet A Helico</td>
+                    <td>QPDD Hélico</td>
+                </tr>
+                <tr class="bg-white">
+                    <td>Aile d'argent Avion</td>
+                    <td>Brevet A Planeur</td>
+                    <td>QPDD Planeur</td>
+                </tr>
+                <tr>
+                    <td>Aile d'argent Planeur</td>
+                    <td>Brevet B Avion</td>
+                    <td>QPDD Multi-Rotor</td>
+                </tr>
+                <tr class="bg-white">
+                    <td>Rotor d'Argent</td>
+                    <td>Brevet B Helico</td>
+                    <td>Attestation delivrance QPDD</td>
+                </tr>
+                <tr>
+                    <td>Aile d'or Avion</td>
+                    <td>Brevet B Planeur</td>
+                    <td>--</td>
+                </tr>
+                <tr class="bg-white">
+                    <td>Aile d'or Planeur</td>
+                    <td>Brevet C</td>
+                    <td>--</td>
+                </tr>
+                <tr>
+                    <td>Rotor d'Or</td>
+                    <td>--</td>
+                    <td>--</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class=" pt-5 row d-md-none justify-content-between">
+            <div class="col-12 col-md-5 p-0">
+                <ul class="list-group text-center">
+                    <li class="brevet text-center list-group-item active bg-danger ">Ailes et Rotors</li>
+                    <li class="list-group-item">Aile de Bronze</li>
+                    <li class="list-group-item">Rotor de Bronze</li>
+                    <li class="list-group-item">Aile d'argent Avion</li>
+                    <li class="list-group-item">Aile d'argent Planeur</li>
+                    <li class="list-group-item ">Rotor d'Argent</li>
+                    <li class="list-group-item">Aile d'or Avion</li>
+                    <li class="list-group-item">Aile d'or Planeur</li>
+                    <li class="list-group-item">Rotor d'Or</li>
+
+                </ul>
+            </div>
+            <div class="col-12 col-md-5 p-0">
+                <ul class="list-group text-center">
+                    <li class="brevet text-center list-group-item active bg-danger ">brevets</li>
+                    <li class="list-group-item">Brevet A Avion</li>
+                    <li class="list-group-item">Brevet A Helico</li>
+                    <li class="list-group-item">Brevet A Planeur</li>
+                    <li class="list-group-item">Brevet B Avion</li>
+                    <li class="list-group-item">Brevet B Helico</li>
+                    <li class="list-group-item">Brevet B Planeur</li>
+                    <li class="list-group-item">Brevet C</li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-5 p-0">
+                <ul class="list-group text-center">
+                    <li class="qualif text-center list-group-item active bg-danger ">Qualifications</li>
+                    <li class="list-group-item">QPDD Avion statuts</li>
+                    <li class="list-group-item">QPDD Hélico</li>
+                    <li class="list-group-item">QPDD Planeur</li>
+                    <li class="list-group-item">QPDD Multi-Rotor</li>
+                    <li class="list-group-item ">Attestation delivrance QPDD</li>
+                </ul>
+            </div>
+        </div>
+
+        </div>
+    </div>
+{% endblock %}
