@@ -1,0 +1,897 @@
+/***** Under this line => Modification style for bootstrap*************/
+
+.btn {
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.card-group > .card {
+    margin-bottom: 15px;
+}
+
+/***** Under this line Personal Specification Style *************/
+
+/****General style ****/
+body {
+    font-family: "Montserrat", Arial, sans-serif;
+    background: #fff;
+    font-size: 14px;
+    line-height: 1.8;
+    font-weight: 300;
+    color: gray;
+}
+
+body.menu-show {
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+}
+
+@font-face {
+    font-family: "Alien Robot";
+    src: url("../fonts/Alien Robot.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Android Assassin";
+    src: url("../fonts/Android Assassin.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+span {
+    color: #76797f;
+}
+
+a {
+    transition: .3s all ease;
+    color: #407dde;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #407dde;
+}
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+    line-height: 1.4;
+    color: #000;
+    font-weight: 400;
+}
+
+.text-primary {
+    color: #407dde;
+}
+
+/***Header style ***/
+
+.jumbotron-fluid{
+    background-image: url('../images/avion2flip.jpg');
+}
+
+.title{
+    font-size: calc(5vw + 14pt);
+    color: #0f3d7f;
+    text-transform: uppercase;
+    font-family: "Android Assassin";
+    line-height: 1.4;
+    text-shadow: 0.1em 0.1em #FFFFFF;
+    padding-left: 10%;
+    padding-bottom: 7%;
+
+}
+
+.title2{
+
+    font-size: calc(2vw + 7pt);
+    text-shadow: 0.1em 0.1em #0f3d7f;
+    font-family: "Alien Robot";
+    line-height: 1.4;
+    color: #FFFFFF;
+    font-weight: 400;
+}
+
+.logo{
+    padding-left: 2%;
+    padding-top: 1%;
+}
+
+
+.hero-wrap {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/*****Class ftco style *****/
+
+.navbar{
+    position: sticky;
+    top: 0;
+}
+
+.ftco-navbar-light {
+    background: #fcfcfc;
+    z-index: 3;
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    font-size: 13px;
+    padding-top: .9rem;
+    padding-bottom: .9rem;
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 1;
+}
+
+.ftco-navbar-light .navbar-brand:hover {
+    color: #407dde;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
+    color: #407dde;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator {
+    position: relative;
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator:before {
+    position: absolute;
+    content: "";
+    top: 10px;
+    bottom: 10px;
+    left: 0;
+    width: 2px;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.hero-wrap {
+    background-position: center center;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
+    padding: 1.5rem;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.ftco-navbar-light .navbar-brand {
+    color: #000;
+
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.cta > a {
+    border: 1px solid #407dde;
+    background: #407dde;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 4px;
+    border-radius: 30px;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.cta > a:hover {
+    border: 1px solid #407dde;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored span {
+    border-color: #407dde;
+}
+
+.ftco-navbar-light .navbar-nav > .nav-item.active > a {
+    color: #407dde;
+}
+
+.ftco-navbar-light .navbar-toggler {
+    border: none;
+    color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    padding-right: 0;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: .1em;
+}
+
+.embed-responsive > img {
+    max-width: 100%;
+}
+
+
+.title3{
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Alien Robot', sans-serif;
+}
+
+.history p{
+    text-align: justify-all;
+    color: lightslategray;
+}
+
+.ftco-partner {
+    padding: 2em 0;
+}
+
+.ftco-discount {
+    position: relative;
+}
+
+.ftco-discount .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0;
+}
+
+
+.ftco-social a {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin-right: 2px;
+    background: white;
+    border-radius: 50%;
+}
+
+.ftco-social a span {
+    color: #407dde;
+}
+
+/*******Navbar Style *******/
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1;
+    color: #000000;
+}
+
+.navbar-toggler i {
+    color: #407dde;
+    font-size: 20px;
+}
+
+/******Class Hero style *****/
+.hero-wrap {
+    width: 100%;
+    height: 700px;
+    min-height: 700px;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/******Slider Style *****/
+
+.slider-text {
+    color: #fff;
+    height: 700px;
+}
+
+.slider-text .icon {
+    margin-bottom: 30px;
+}
+
+.slider-text .icon span {
+    line-height: 0;
+    font-size: 80px;
+    color: #fff;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.slider-text .icon .logo h1 {
+    font-size: 38px;
+}
+
+.slider-text {
+    font-size: 60px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.slider-text p {
+    font-size: 20px;
+    line-height: 1.5;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.slider-text p a {
+    color: #fff;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.slider-text p a span {
+    color: #fff;
+}
+
+.slider-text .btn-outline-white {
+    border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.slider-text .btn-outline-white span {
+    color: #fff;
+}
+
+.slider-text .btn-outline-white:hover span {
+    color: #407dde;
+}
+
+/*******Background Style *****/
+
+.bg-grey {
+    background-color: #f3f3f3;
+}
+
+.bg-primary {
+    background: #407dde;
+}
+
+/******Button style *****/
+
+.btn {
+    cursor: pointer;
+    border-radius: 30px;
+    box-shadow: none;
+    font-size: 13px;
+}
+
+.btn:hover, .btn:active, .btn:focus {
+    outline: none;
+}
+
+.btn.btn-primary {
+    background: #407dde;
+    border: 1px solid #407dde;
+    color: #fff;
+}
+
+.btn.btn-primary:hover {
+    border: 1px solid #407dde;
+    color: #407dde;
+}
+
+.btn.btn-primary.btn-outline-primary {
+    border: 1px solid #407dde;
+    background: transparent;
+    color: #407dde;
+}
+
+.btn.btn-primary.btn-outline-primary:hover {
+    border: 1px solid transparent;
+    background: #407dde;
+    color: #fff;
+}
+
+.btn.btn-white {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #000;
+}
+
+.btn.btn-white:hover {
+    border: 1px solid #000;
+    background: #000;
+    color: #fff;
+}
+
+.btn.btn-white.btn-outline-white {
+    border-color: rgba(255, 255, 255, 0.8);
+    background: none;
+    border-width: 1px;
+    color: #fff;
+}
+
+.btn.btn-white.btn-outline-white:hover, .btn.btn-white.btn-outline-white:focus, .btn.btn-white.btn-outline-white:active {
+    background: #fff;
+    border-color: #fff;
+    color: #407dde;
+}
+
+.btn.btn-outline-black {
+    border-color: black;
+    background: none;
+    border-width: 1px;
+    color: #000;
+}
+
+.btn.btn-outline-black:hover, .btn.btn-outline-black:focus, .btn.btn-outline-black:active {
+    background: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+/*******Services style *****/
+
+.services .icon span {
+    margin: 0 auto;
+    font-size: 40px;
+    color: #407dde;
+}
+
+.services h3 {
+    font-size: 15px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/****Work style *****/
+
+.work-category span a {
+    color: #b3b3b3;
+}
+
+.work-category span a.active {
+    color: #000;
+}
+
+.work-entry {
+    display: block;
+    width: 100%;
+    position: relative;
+}
+
+.work-entry {
+    margin-bottom: 30px;
+}
+
+.work-entry .info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.work-entry .info {
+    opacity: 1;
+}
+
+.work-entry .info > div {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.work-entry .info h3 {
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.work-entry .info .icon {
+    width: 50px;
+    height: 50px;
+    bordeR: 1px solid rgba(255, 255, 255, 0.3);
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+.work-entry .info .icon span {
+    color: #fff;
+}
+
+.work-entry:hover .info {
+    opacity: 1;
+}
+
+/****Partner style ****/
+
+.partner .partner-entry {
+    opacity: .3;
+    transition: all 0.3s ease;
+}
+
+.partner .partner-entry:hover {
+    opacity: 1;
+}
+
+/*****Pricing Style *****/
+
+.pricing-entry {
+    border: 1px solid #f0f0f0;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.pricing-entry {
+    margin-bottom: 4em;
+}
+
+.pricing-entry > div {
+    padding: 20px;
+}
+
+.pricing-entry > div p {
+    margin-bottom: 0;
+}
+
+.pricing-entry h3 {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.pricing-entry p .price {
+    font-weight: 400;
+    font-size: 20px;
+    color: #407dde;
+}
+
+.pricing-entry p .per {
+    font-size: 12px;
+}
+
+.pricing-entry ul {
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-entry ul li {
+    list-style: none;
+    padding: 10px 20px;
+}
+
+.pricing-entry ul li:nth-child(odd) {
+    background: #fafafa;
+}
+
+.pricing-entry .button {
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
+}
+
+.pricing-entry .button .btn {
+    border-radius: 30px;
+}
+
+.pricing-entry .button .btn.btn-outline-primary {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    color: #cccccc;
+}
+
+.pricing-entry .button .btn.btn-outline-primary:hover, .pricing-entry .button .btn.btn-outline-primary:focus {
+    background: #fff;
+}
+
+.pricing-entry:hover, .pricing-entry:focus {
+    border: 1px solid #407dde;
+}
+
+.pricing-entry:hover .button .btn.btn-outline-primary, .pricing-entry:focus .button .btn.btn-outline-primary {
+    background: #407dde;
+    border: 1px solid #407dde;
+    color: #fff;
+}
+
+.pricing-entry.active {
+    border: 1px solid #407dde;
+}
+
+.pricing-entry.active .button .btn.btn-outline-primary {
+    background: #407dde;
+    border: 1px solid #407dde;
+    color: #fff;
+}
+
+/******Class staff Style****/
+.staff {
+    margin-bottom: 30px;
+}
+
+.card .img {
+    border: 1px solid #f0f0f0;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.card{
+    transition: all 0.2s ease-out;
+}
+
+.card:hover{
+    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+    transition: all 0.2s ease-in;
+}
+
+/*****Class discount style ****/
+
+.discount {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.discount h3 {
+    color: #fff;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.discount h2 {
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.discount p {
+    font-size: 16px;
+}
+
+.ftco-section .ftco-sub-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    color: #d4d4d4;
+    font-family: "Work Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 300;
+}
+
+.ftco-section .ftco-primary-title {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.ftco-section {
+    padding: 7em 0;
+    position: relative;
+}
+
+.footer {
+    background-color:#687276;
+    font-size: 1.3em;
+    color: white;
+}
+
+.footer p {
+    color: white;
+}
+
+.footer h4 {
+    color: white;
+    text-transform: uppercase;
+}
+.footer h5 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer-btn {
+    background-color: #687276;
+    border: 1px solid white;
+    border-radius: 8px;
+    transition: ease-out 0.2s;
+}
+.footer-btn:hover {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 8px;
+    color: #76797f;
+    transition: ease-in 0.2s;
+}
+hr{
+    width: 70%;
+    color: white;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer a:hover {
+    color: #0f3d7f;
+}
+
+.footer .signature {
+    text-align: center;
+}
+
+
+.heading-section .subheading {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.heading-section h2 {
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.heading-section.heading-section-white .subheading {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.heading-section.heading-section-white h2 {
+    font-size: 20px;
+    color: #fff;
+}
+
+.heading-section.heading-section-white p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.hero-wrap,
+.img,
+.blog-img,
+.user-img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.block-23 ul {
+    padding: 0;
+}
+
+.block-23 ul li, .block-23 ul li > a {
+    display: table;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.block-23 ul li span {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.block-23 ul li .icon, .block-23 ul li .text {
+    display: table-cell;
+    vertical-align: top;
+}
+
+.block-23 ul li .icon {
+    width: 40px;
+    font-size: 18px;
+    padding-top: 2px;
+    color: white;
+}
+
+.block-6 {
+    margin-bottom: 40px;
+}
+
+.block-21 .blog-img {
+    display: block;
+    height: 80px;
+    width: 80px;
+}
+
+.block-21 .text {
+    width: calc(100% - 100px);
+}
+
+.block-21 .text .heading {
+    font-size: 16px;
+}
+
+.block-21 .text .heading a {
+    color: #000;
+}
+
+.block-21 .text .heading a:hover, .block-21 .text .heading a:active, .block-21 .text .heading a:focus {
+    color: #407dde;
+}
+
+.block-21 .text .meta > div {
+    display: inline-block;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.block-21 .text .meta > div a {
+    color: gray;
+}
+
+/**Activities Style**/
+.title_act{
+    font-family: "Alien Robot";
+    src: url("../fonts/Alien Robot.otf");
+    font-size: 1.5rem;
+}
+
+.ftco-section {
+    padding: 5em 0;
+    position: relative;
+}
+.fas {
+    font-size: 6em;
+}
+
+
+.circle {
+    margin: 36px;
+    display: inline-block;
+    padding: 16px;
+    text-align: center;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid #1d2087;
+}
+
+.circle::before,
+.circle::after {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    content: '';
+}
+.circle,
+.circle::before,
+.circle::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .4s;
+    transition: all .4s;
+}
+
+.circle {
+    position: relative;
+    z-index: 2;
+    background-color: #687276;
+    border: 2px solid #5c5eae;
+    color: #fff;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+.circle:hover {
+    color: #fff;
+}
+.circle::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-transform: scale(.5);
+    transform: scale(.5);
+}
+.circle:hover::after {
+    background:  #5492E7;
+    border-radius: 50%;
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+}
+
+.circle2 {
+    opacity: 0.6;
+}
+.heading{
+    color:#687276;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all ease-in-out 0.4s;
+}
+.heading:hover{
+    color: black;
+    border-color: black;
+}
+
+.inscription{
+    font-size: 1rem;
+}

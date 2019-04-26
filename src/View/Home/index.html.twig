@@ -1,5 +1,90 @@
-{% extends 'layout.html.twig' %}
+{% extends 'userlayout.html.twig' %}
+
+{% block title %} - Accueil {% endblock %}
+
 
 {% block content %}
-    <h1>Hello Wilder !</h1>
+
+    <section class="ftco-section mt-4">
+        <div class="container">
+            <div class="row">
+                <div class="history">
+                    <h3 class="title3 pb-4">Histoire</h3>
+                    <p class="pl-3 pr-3"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ab aliquid culpa dolor impedit in, labore magni minus, necessitatibus nesciunt odit, pariatur quae quam sequi similique sit soluta vero voluptate?</span><span>Doloremque, et exercitationem harum iste labore nam pariatur quia. Amet assumenda commodi cupiditate debitis doloremque eos fuga id in laborum neque, quidem rem repellendus sunt veritatis, voluptatem. Aliquid necessitatibus, tempora.</span><span>Aliquam blanditiis consequuntur eius esse expedita, explicabo fugit incidunt perferendis quae qui quibusdam quidem quod recusandae veniam vero? Delectus distinctio eius et impedit magni maxime modi nobis quae quis velit.</span><span>Ab omnis perferendis quia. Distinctio itaque, labore! Ad alias aperiam asperiores aut consectetur culpa deserunt doloremque enim, facilis ipsa ipsam minus molestiae omnis perferendis quaerat reprehenderit sapiente temporibus unde velit.</span><span>Accusantium alias architecto asperiores assumenda aut commodi consectetur dignissimos eaque explicabo fugit, ipsum laboriosam maiores nobis omnis pariatur reiciendis, repellat repellendus rerum soluta tempora temporibus ullam velit vitae? Deleniti, molestias.</span><span>Assumenda beatae cupiditate debitis delectus deleniti deserunt dolor dolore doloribus eligendi eum id impedit in, inventore laborum, laudantium libero molestias mollitia nemo nisi officiis perspiciatis provident quas rem, velit vitae!</span><span>Excepturi fuga illo ipsa maxime modi nulla odio sit veritatis. A adipisci asperiores cupiditate dolore enim eveniet expedita inventore iste nam neque nesciunt optio reiciendis repellendus suscipit, tempore velit vitae.</span><span>Amet at aut culpa doloribus ducimus eos excepturi id illum impedit laudantium magnam, minus mollitia nam nobis nulla obcaecati omnis placeat praesentium quaerat quidem quo ratione sapiente sint sit velit?</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section bg-grey py-5">
+        <h3 class="title3">La meteo</h3>
+
+        <a href="https://www.tameteo.com/meteo_Saint+Jean+de+la+Ruelle-Europe-France-Loiret--1-24379.html" target="_blank" class="container embed-responsive text-center pt-5">
+            <img src="https://www.tameteo.com/wimages/fotof75579220d020d6c092045b67b573e74.png">
+        </a>
+    </section>
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-md-3 text-center heading">
+                    <div class="circle circle2">
+                        <i class="fas fa-fighter-jet mt-4"></i>
+                    </div>
+                    <h3 class="title_act">Avion</h3>
+                </div>
+                <div class="col-md-3 text-center heading">
+                    <div class="circle circle2">
+                        <i class="fas fa-paper-plane mt-4"></i>
+                    </div>
+                    <h3 class="title_act">Planeur</h3>
+                </div>
+                <div class="col-md-3 text-center heading">
+                    <div class="circle circle2">
+                        <i class="fas fa-helicopter mt-4"></i>
+                    </div>
+                    <h3 class="title_act">Helicoptere</h3>
+                </div>
+                <div class="col-md-3 text-center heading">
+                    <div class="circle circle2">
+                        <i class="fas fa-home mt-4"></i>
+                    </div>
+                    <h3 class="title_act">Indoor</h3>
+                </div>
+            </div>
+        </div>
+    </section>    
+    
+   <section class="ftco-section bg-grey">
+      <div class="container">
+         <div class="events">
+            <div class="row justify-content-around">
+                {% for event in events %}
+                   <div class="col-12 col-lg-5 staff">
+                        <div class="card">
+                            <img class="card-img-top" src="{{ event.picture }}" alt="affiche evenement">
+                               <div class="card-body">
+                                  <p>{{ event.date }}</p>
+                                  <h4 class="card-title">{{ event.title }}</h4>
+                                  <p class="card-text">{{ event.description }}</p>
+                                </div>
+                          </div>
+                     </div>
+                  {% endfor %}
+              </div>
+           </div>
+        </div>
+     </section>      
+     <section class="ftco-section bg-grey text-center ">
+        <h3 class="title3 pb-4">La video des 40ans !</h3>
+        <div class="container embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" width="560" height="315"
+                    src="https://www.youtube.com/embed/TZVEIXiZAV4"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+        </div>
+     </section>
 {% endblock %}
+
