@@ -8,6 +8,8 @@
 
 namespace App\Controller;
 
+use App\Model\PartnerManager;
+
 class InscriptionController extends AbstractController
 {
 
@@ -21,6 +23,9 @@ class InscriptionController extends AbstractController
      */
     public function index()
     {
-        return $this->twig->render('Inscription/index.html.twig');
+        $partnerManager = new PartnerManager();
+        $partners = $partnerManager->selectAll();
+
+        return $this->twig->render('Inscription/index.html.twig', ['partners' => $partners]);
     }
 }
