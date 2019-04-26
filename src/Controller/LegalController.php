@@ -19,8 +19,8 @@ class LegalController extends AbstractController
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    public function mentionslegales()
+    public function legalmentions()
     {
-        return $this->twig->render('Legal/mentionslegales.html.twig');
+        return $this->twig->render('Legal/legalmentions.html.twig');
     }
 }
