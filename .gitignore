@@ -4,4 +4,4 @@
 *.cache
 db.php
 .idea
-/public/assets/images/partner/*
+/public/assets/images/
