@@ -113,12 +113,12 @@ h1, h2, h3, h4, h5,
     margin-top: 3%;
     text-align: center;
     font-family: "Alien Robot";
-    font-size: calc(2vw + 24pt);
+    font-size: calc(2vw + 12pt);
 
 }
 
 .infrastructuresText{
-    font-size: calc(0.3vw + 12pt);
+    font-size: calc(0.2vw + 12pt);
 }
 
 .infrastructureTitle{
@@ -126,6 +126,7 @@ h1, h2, h3, h4, h5,
     margin-top: 3%;
     font-family: "Alien Robot";
     color: red;
+    font-size: calc(1vw + 8pt);
 }
 
 .terrainTitle{
@@ -134,11 +135,12 @@ h1, h2, h3, h4, h5,
     text-align: center;
     font-family: "Alien Robot";
     color: #0f3d7f;
+    font-size: calc(1vw + 8pt);
 }
 
 .terrainText{
 
-    font-size: calc(0.3vw + 12pt);
+    font-size: calc(0.2vw + 12pt);
 }
 
 .schemaTitle{
@@ -147,6 +149,7 @@ h1, h2, h3, h4, h5,
     text-align: center;
     font-family: "Alien Robot";
     color: red;
+    font-size: calc(1vw + 8pt);
 }
 
 .containerInformation{
