@@ -1,0 +1,14 @@
+{% extends 'adminlayout.html.twig' %}
+
+{% block content %}
+    <section class="ftco-section mt-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="history">
+                    <h3 class="title3 pb-4">Modifier l'evenement {{ event.name }}</h3>
+                    {% include 'Admin/_formevent.html.twig' %}
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
