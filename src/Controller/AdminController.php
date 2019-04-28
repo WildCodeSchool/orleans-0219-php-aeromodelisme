@@ -15,7 +15,7 @@ use App\Model\EventManager;
  * Class EventController
  *
  */
-class EventController extends AbstractController
+class AdminController extends AbstractController
 {
 
 
