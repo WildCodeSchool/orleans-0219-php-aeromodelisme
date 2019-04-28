@@ -1,0 +1,8 @@
+<form method="post">
+    <input type="hidden" value="{{ event.id }}" name="id">
+    <input type="text" value="{{ event.title }}" name="title">
+    <input type="date" value="{{ event.event_date }}" name="date">
+    <img src="../../{{ event.picture }}" alt="affiche evenement">
+    <textarea name="description" rows="5" cols="150">{{ event.description }}</textarea>
+    <input type="submit" value="Valider">
+</form>

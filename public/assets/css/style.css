@@ -895,3 +895,10 @@ hr{
 .inscription{
     font-size: 1rem;
 }
+
+/********Admin page style *****/
+.title4{
+    text-align: center;
+    font-size: 2em;
+    font-family: 'Alien Robot', sans-serif;
+}
