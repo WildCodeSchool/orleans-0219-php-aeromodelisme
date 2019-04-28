@@ -34,21 +34,4 @@ class AdminController extends AbstractController
 
         return $this->twig->render('Admin/events.html.twig', ['events' => $events]);
     }
-
-    /**
-     * Display event edition page specified by $id
-     *
-     * @param int $id
-     * @return string
-     * @throws \Twig\Error\LoaderError
-     * @throws \Twig\Error\RuntimeError
-     * @throws \Twig\Error\SyntaxError
-     */
-    public function editevent(int $id): string
-    {
-        $eventManager = new EventManager();
-        $event = $eventManager->selectOneById($id);
-
-        return $this->twig->render('Admin/editevent.html.twig', ['event' => $event]);
-    }
 }
