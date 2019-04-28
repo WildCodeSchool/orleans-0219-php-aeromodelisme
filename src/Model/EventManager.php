@@ -37,15 +37,4 @@ class EventManager extends AbstractManager
         return $this->pdo->query('SELECT * ,date_format(event_date, \'%d/%m/%Y\') AS date,date_add(curdate(),
  interval 30 DAY) AS date_exp  FROM ' . $this->table . ' HAVING event_date < date_exp')->fetchAll();
     }
-
-
-    /**
-     * Select all events
-     * @return array
-     */
-    public function selectAll(): array
-    {
-
-        return $this->pdo->query('SELECT * FROM ' . $this->table)->fetchAll();
-    }
 }

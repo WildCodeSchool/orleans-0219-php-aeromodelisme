@@ -25,6 +25,7 @@
                                 <th scope="row">{{ event.id }}</th>
                                 <td>{{ event.title }}</td>
                                 <td>{{ event.event_date }}</td>
+                                <td><a class="btn btn-warning" href="/Admin/editevent/{{ event.id }}" role="button">Modifier</a></td>
                             </tr>
                         {% endfor %}
                         </tbody>
