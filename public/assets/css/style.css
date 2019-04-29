@@ -658,11 +658,16 @@ h1, h2, h3, h4, h5,
     padding: 7em 0;
     position: relative;
 }
-
 .footer {
     background-color:#687276;
     font-size: 1.3em;
     color: white;
+}
+.form-control {
+    background-color: aliceblue;
+}
+.footer .info p {
+    vertical-align: middle;
 }
 
 .footer p {
@@ -679,7 +684,6 @@ h1, h2, h3, h4, h5,
 }
 
 .footer-btn {
-    background-color: #687276;
     border: 1px solid white;
     border-radius: 8px;
     transition: ease-out 0.2s;
@@ -708,6 +712,16 @@ hr{
     text-align: center;
 }
 
+.footer label{
+    font-size: 1.3em;
+}
+.form address{
+    padding-top: 3.5em;
+}
+.form-control {
+    padding-top: 1.4em;
+    padding-bottom: 1.4em;
+}
 
 .heading-section .subheading {
     font-size: 14px;
