@@ -158,6 +158,39 @@ h1, h2, h3, h4, h5,
 }
 
 
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+body {
+    height: 100%;
+    width: 100%;
+    /*background: #1b1d21;*/
+    /*background-image: url(http://www.transparenttextures.com/patterns/carbon-fibre.png);*/
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 92px;
+    padding:  5px;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+}
+
+.txtshadow{
+    color: #000;
+    text-shadow: 0 0 1px #3D3D3D;
+}
+
+#canvas-container{
+    text-align: center;
+}
+
+
+
+
+
+
 /*****Class ftco style *****/
 
 .navbar{
