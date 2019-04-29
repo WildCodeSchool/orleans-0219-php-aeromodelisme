@@ -1018,3 +1018,7 @@ hr{
 .inscription{
     font-size: 1rem;
 }
+
+.card-gallery-random{
+    max-width: 30rem;
+}
