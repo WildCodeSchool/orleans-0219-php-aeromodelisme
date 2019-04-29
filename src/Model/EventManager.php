@@ -39,13 +39,14 @@ class EventManager extends AbstractManager
     }
 
     /**
-     * @param array $item
+     * @param array $event
      * @return bool
      */
     public function update(array $event):bool
     {
         // prepared request
-        $statement = $this->pdo->prepare("UPDATE $this->table SET `title` = :title, `event_date` = :event_date, `picture` = :picture, `description` = :description  WHERE `id` = :id");
+        $statement = $this->pdo->prepare("UPDATE $this->table SET `title` = :title, `event_date` = :event_date,
+ `picture` = :picture, `description` = :description  WHERE `id` = :id");
         $statement->bindValue('id', $event['id'], \PDO::PARAM_INT);
         $statement->bindValue('title', $event['title'], \PDO::PARAM_STR);
         $statement->bindValue('event_date', $event['event_date']);

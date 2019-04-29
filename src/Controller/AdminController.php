@@ -35,7 +35,6 @@ class AdminController extends AbstractController
         return $this->twig->render('Admin/events.html.twig', ['events' => $events]);
     }
 
-
     /**
      * Display event edition page specified by $id
      *
@@ -49,9 +48,8 @@ class AdminController extends AbstractController
     {
         $eventManager = new EventManager();
         $event = $eventManager->selectOneById($id);
-        $failed ='';
+        $failed = '';
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
             if (!empty($_FILES['picture']['error'] != 4)) {
                 $allowed = ['image/jpeg', 'image/png'];
 
@@ -62,43 +60,32 @@ class AdminController extends AbstractController
                 $fileType = $imageFile['type'];
                 $fileError = $imageFile['error'];
 
-                $file_exp = explode('/',$fileType);
+                $file_exp = explode('/', $fileType);
                 $fileExt = strtolower(end($file_exp));
                 if (in_array($fileType, $allowed)) {
-
                     if ($fileError === 0) {
-
                         if ($fileSize <= 1048576) {
                             $file_name_new = uniqid('', true) . '.' . $fileExt;
                             $file_destination = '../public/assets/images/events/' . $file_name_new;
-
                             if (move_uploaded_file($fileTmp, $file_destination)) {
-                                $uploaded = $file_destination;
+                                $event['id'] = $id;
+                                $event['title'] = $_POST['title'];
+                                $event['event_date'] = $_POST['event_date'];
+                                $event['picture'] = 'assets/images/events/' . $file_name_new;
+                                $event['description'] = $_POST['description'];
+                                $eventManager->update($event);
                             } else {
                                 $failed = $fileName . " failed to uploaded";
                             }
-
                         } else {
-
                             $failed = $fileName . " is too large.";
                         }
-
                     } else {
                         $failed = $fileName . " errored with code " . $fileError;
                     }
-
                 } else {
                     $failed = $fileName . " file extension " . $fileExt . " is not allowed";
                 }
-                if (!empty($uploaded)) {
-                    $event['id'] = $id;
-                    $event['title'] = $_POST['title'];
-                    $event['event_date'] = $_POST['event_date'];
-                    $event['picture'] = 'assets/images/events/' . $file_name_new;
-                    $event['description'] = $_POST['description'];
-                    $eventManager->update($event);
-                }
-
             } else {
                 $event['id'] = $id;
                 $event['title'] = $_POST['title'];
@@ -107,6 +94,6 @@ class AdminController extends AbstractController
                 $eventManager->update($event);
             }
         }
-        return $this->twig->render('Admin/editevent.html.twig', ['event' => $event, 'error'=> $failed]);
+        return $this->twig->render('Admin/editevent.html.twig', ['event' => $event, 'error' => $failed]);
     }
 }
