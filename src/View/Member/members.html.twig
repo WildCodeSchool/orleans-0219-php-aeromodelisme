@@ -1,0 +1,54 @@
+{% extends'userlayout.html.twig' %}
+
+{% block content %}
+    <div class=" container mt-5 mb-5">
+        <h4 class="title_member mb-4">Notre equipe</h4>
+        <div class="row">
+
+            <table class="table table-striped text-center">
+
+                <thead class="bg-danger text-white">
+                <tr>
+                    <th>NOM</th>
+                    <th>PRENOM</th>
+                    <th>FONCTION</th>
+                    <th>EMAIL</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="bg-white">
+                    <td>Jeremy Fauvet</td>
+                    <td>President</td>
+                    <td>jeremy@example.com</td>
+                </tr>
+                <tr class="bg-light">
+                    <td>Patrick Transon</td>
+                    <td>Vice President</td>
+                    <td>patrick@example.com</td>
+                </tr>
+
+                <tr class="bg-white">
+                    <td>Francine Landreau</td>
+                    <td>Secretaire</td>
+                    <td>francine@example.com</td>
+                </tr>
+                <tr class="bg-light">
+                    <td>Patrick Transon</td>
+                    <td>Secretaire Adjoint</td>
+                    <td>patrick@example.com</td>
+                </tr>
+                <tr class="bg-white">
+                    <td>Francine Landreau</td>
+                    <td>Tresorerie</td>
+                    <td>francine@example.com</td>
+                </tr>
+                <tr class="bg-light">
+                    <td>Jean-luc Landreau</td>
+                    <td>Tresorerie Adjoint</td>
+                    <td>jean-luc@example.com</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}

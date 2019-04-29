@@ -806,30 +806,47 @@ hr{
 }
 
 /**Activities Style**/
+.back_act{
+    background-image: url("https://images.unsplash.com/photo-1439950637860-4d7b4833e2e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1506&q=80");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+
+}
 .title_act{
     font-family: "Alien Robot";
-    src: url("../fonts/Alien Robot.otf");
+    color: white;
     font-size: 1.5rem;
 }
 
 .ftco-section {
     padding: 5em 0;
     position: relative;
+
 }
 .fas {
-    font-size: 6em;
-}
 
+    font-size: 80px;
+    color: #dc3545;
+    position:relative;
+}
+.fas:hover{
+   color:#dc3545;
+}
 
 .circle {
     margin: 36px;
     display: inline-block;
-    padding: 16px;
+    padding: 10px;
     text-align: center;
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    border: 2px solid #1d2087;
+
+
+
 }
 
 .circle::before,
@@ -838,6 +855,7 @@ hr{
     z-index: -1;
     display: block;
     content: '';
+
 }
 .circle,
 .circle::before,
@@ -852,15 +870,17 @@ hr{
 .circle {
     position: relative;
     z-index: 2;
-    background-color: #687276;
-    border: 2px solid #5c5eae;
+
+    border: 3px solid white;
     color: #fff;
     line-height: 50px;
     overflow: hidden;
+    opacity: 1;
 }
 
 .circle:hover {
-    color: #fff;
+    color: #FFFFFF;
+    box-shadow: 0 0 30px rgba(0,0,0,0.9);
 }
 .circle::after {
     top: 0;
@@ -872,14 +892,14 @@ hr{
     transform: scale(.5);
 }
 .circle:hover::after {
-    background:  #5492E7;
+    background:#FFFFFF;
     border-radius: 50%;
     -webkit-transform: scale(.9);
     transform: scale(.9);
 }
 
 .circle2 {
-    opacity: 0.6;
+    opacity: 1;
 }
 .heading{
     color:#687276;
@@ -889,5 +909,14 @@ hr{
 }
 .heading:hover{
     color: black;
-    border-color: black;
+    border-color: white;
+}
+/**Member Style**/
+.title_member{
+    text-align: center;
+    font-family: "Alien Robot";
+    color: #0f3d7f;
+}
+.table{
+    font-family: "Montserrat"
 }
