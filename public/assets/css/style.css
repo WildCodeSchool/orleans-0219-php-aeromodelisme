@@ -17,7 +17,7 @@ body {
     font-size: 14px;
     line-height: 1.8;
     font-weight: 300;
-    color: gray;
+    color: #000000;
 }
 
 body.menu-show {
@@ -37,6 +37,12 @@ body.menu-show {
 @font-face {
     font-family: "Android Assassin";
     src: url("../fonts/Android Assassin.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Milestone";
+    src: url("../fonts/MilestoneFreeVersion-Script.otf");
     font-weight: normal;
     font-style: normal;
 }
@@ -112,30 +118,32 @@ h1, h2, h3, h4, h5,
     justify-content: center;
     margin-top: 3%;
     text-align: center;
-    font-family: "Alien Robot";
-    font-size: calc(2vw + 12pt);
+    font-family: "Milestone";
+    font-size: calc(6vw + 12pt);
 
 }
 
 .infrastructuresText{
     font-size: calc(0.2vw + 12pt);
+    text-align: center;
 }
 
 .infrastructureTitle{
     justify-content: center;
+    text-align: center;
     margin-top: 3%;
-    font-family: "Alien Robot";
-    color: red;
-    font-size: calc(1vw + 8pt);
+    font-family: "Milestone";
+    color: #dc3545;
+    font-size: calc(4vw + 8pt);
 }
 
 .terrainTitle{
     justify-content: center;
     margin-top: 3%;
     text-align: center;
-    font-family: "Alien Robot";
+    font-family: "Milestone";
     color: #0f3d7f;
-    font-size: calc(1vw + 8pt);
+    font-size: calc(4vw + 8pt);
 }
 
 .terrainText{
@@ -147,9 +155,9 @@ h1, h2, h3, h4, h5,
     justify-content: center;
     margin-top: 3%;
     text-align: center;
-    font-family: "Alien Robot";
-    color: red;
-    font-size: calc(1vw + 8pt);
+    font-family: "Milestone";
+    color: #dc3545;
+    font-size: calc(4vw + 8pt);
 }
 
 .containerInformation{
