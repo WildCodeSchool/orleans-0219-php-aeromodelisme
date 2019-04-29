@@ -68,11 +68,11 @@ h1, h2, h3, h4, h5,
 
 /***Header style ***/
 
-.jumbotron-fluid{
+.jumbotron-fluid {
     background-image: url('../images/avion2flip.jpg');
 }
 
-.title{
+.title {
     font-size: calc(5vw + 14pt);
     color: #0f3d7f;
     text-transform: uppercase;
@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5,
 
 }
 
-.title2{
+.title2 {
 
     font-size: calc(2vw + 7pt);
     text-shadow: 0.1em 0.1em #0f3d7f;
@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5,
     font-weight: 400;
 }
 
-.logo{
+.logo {
     padding-left: 2%;
     padding-top: 1%;
 }
@@ -106,12 +106,121 @@ h1, h2, h3, h4, h5,
     background-repeat: no-repeat;
 }
 
+/***** Activities page *****/
+
+.activitiesTitle{
+    justify-content: center;
+    margin-top: 3%;
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: "Alien Robot";
+    font-size: calc(2vw + 24pt);
+    color: #000000;
+}
+
+.cardActivities2{
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+}
+
+.activitieTitlePlane{
+    font-family: "Alien Robot";
+    margin-top: 3vw;
+    color: red;
+}
+
+.activitieTitleGlider {
+    font-family: "Alien Robot";
+    margin-top: 3vw;
+    color: #0f3d7f;
+}
+
+.activitieTitleHelico {
+    font-family: "Alien Robot";
+    margin-top: 3vw;
+    color: red;
+}
+
+.activitieTitleIndoor {
+    font-family: "Alien Robot";
+    margin-top: 3vw;
+    color: #0f3d7f;
+}
+
+.textActivities{
+    font-size: calc(0.2vw + 12pt);
+    color: black;
+}
+
+.cardActivities1{
+    margin-top: 3vw;
+}
+
+/***** Informations style *****/
+
+.informationTitle{
+    justify-content: center;
+    margin-top: 3%;
+    text-align: center;
+    font-family: "Alien Robot";
+    font-size: calc(2vw + 12pt);
+
+}
+
+.infrastructuresText{
+    font-size: calc(0.2vw + 12pt);
+}
+
+.infrastructureTitle{
+    justify-content: center;
+    margin-top: 3%;
+    font-family: "Alien Robot";
+    color: red;
+    font-size: calc(1vw + 8pt);
+}
+
+.terrainTitle{
+    justify-content: center;
+    margin-top: 3%;
+    text-align: center;
+    font-family: "Alien Robot";
+    color: #0f3d7f;
+    font-size: calc(1vw + 8pt);
+}
+
+.terrainText{
+
+    font-size: calc(0.2vw + 12pt);
+}
+
+.schemaTitle{
+    justify-content: center;
+    margin-top: 3%;
+    text-align: center;
+    font-family: "Alien Robot";
+    color: red;
+    font-size: calc(1vw + 8pt);
+}
+
+.containerInformation{
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
 
 /*****Class ftco style *****/
 
-.navbar{
+.navbar {
     position: sticky;
     top: 0;
+}
+
+.navbar-brand img {
+    max-width: 7rem;
+    margin-left: 5vw;
+}
+
+.navbar-collapse {
+    padding-right: 13vw;
 }
 
 .ftco-navbar-light {
@@ -120,8 +229,12 @@ h1, h2, h3, h4, h5,
     box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.07);
 }
 
+.dropdown-menu a:hover{
+    background-color: #dc3545;
+    color: white;
+}
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link {
-    font-size: 13px;
+    font-size: 18px;
     padding-top: .9rem;
     padding-bottom: .9rem;
     padding-left: 0;
@@ -136,23 +249,7 @@ h1, h2, h3, h4, h5,
 }
 
 .ftco-navbar-light .navbar-nav > .nav-item > .nav-link:hover {
-    color: #407dde;
-}
-
-.ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator {
-    position: relative;
-    margin-left: 20px;
-    padding-left: 20px;
-}
-
-.ftco-navbar-light .navbar-nav > .nav-item.ftco-seperator:before {
-    position: absolute;
-    content: "";
-    top: 10px;
-    bottom: 10px;
-    left: 0;
-    width: 2px;
-    background: rgba(255, 255, 255, 0.05);
+    color: #D9534F;
 }
 
 .hero-wrap {
@@ -164,32 +261,8 @@ h1, h2, h3, h4, h5,
     color: rgba(0, 0, 0, 0.7);
 }
 
-.ftco-navbar-light .navbar-brand {
-    color: #000;
-
-}
-
-.ftco-navbar-light .navbar-nav > .nav-item.cta > a {
-    border: 1px solid #407dde;
-    background: #407dde;
-    padding-top: .5rem;
-    padding-bottom: .5rem;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 4px;
-    border-radius: 30px;
-}
-
-.ftco-navbar-light .navbar-nav > .nav-item.cta > a:hover {
-    border: 1px solid #407dde;
-}
-
-.ftco-navbar-light .navbar-nav > .nav-item.cta.cta-colored span {
-    border-color: #407dde;
-}
-
 .ftco-navbar-light .navbar-nav > .nav-item.active > a {
-    color: #407dde;
+    color: #dc3545;
 }
 
 .ftco-navbar-light .navbar-toggler {
@@ -207,13 +280,13 @@ h1, h2, h3, h4, h5,
 }
 
 
-.title3{
+.title3 {
     text-align: center;
     font-size: 3em;
     font-family: 'Alien Robot', sans-serif;
 }
 
-.history p{
+.history p {
     text-align: justify-all;
     color: lightslategray;
 }
@@ -251,15 +324,6 @@ h1, h2, h3, h4, h5,
 }
 
 /*******Navbar Style *******/
-
-.navbar-brand {
-    font-weight: 700;
-    font-size: 22px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    line-height: 1;
-    color: #000000;
-}
 
 .navbar-toggler i {
     color: #407dde;
@@ -609,12 +673,13 @@ h1, h2, h3, h4, h5,
     margin: 0 auto;
     border-radius: 50%;
 }
-.card{
+
+.card {
     transition: all 0.2s ease-out;
 }
 
-.card:hover{
-    box-shadow: 0 0 30px rgba(0,0,0,0.4);
+.card:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
     transition: all 0.2s ease-in;
 }
 
@@ -660,7 +725,7 @@ h1, h2, h3, h4, h5,
 }
 
 .footer {
-    background-color:#687276;
+    background-color: #687276;
     font-size: 1.3em;
     color: white;
 }
@@ -673,6 +738,7 @@ h1, h2, h3, h4, h5,
     color: white;
     text-transform: uppercase;
 }
+
 .footer h5 {
     color: white;
     text-transform: uppercase;
@@ -684,6 +750,7 @@ h1, h2, h3, h4, h5,
     border-radius: 8px;
     transition: ease-out 0.2s;
 }
+
 .footer-btn:hover {
     background-color: white;
     border: 1px solid black;
@@ -691,7 +758,8 @@ h1, h2, h3, h4, h5,
     color: #76797f;
     transition: ease-in 0.2s;
 }
-hr{
+
+hr {
     width: 70%;
     color: white;
 }
@@ -806,6 +874,7 @@ hr{
 }
 
 /**Activities Style**/
+
 .back_act{
     background-image: url("https://images.unsplash.com/photo-1439950637860-4d7b4833e2e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1506&q=80");
     background-size:cover;
@@ -815,7 +884,9 @@ hr{
     opacity: 0.4;
 
 }
-.title_act{
+
+.title_act {
+
     font-family: "Alien Robot";
     color: white;
     font-size: 1.5rem;
@@ -826,6 +897,7 @@ hr{
     position: relative;
 
 }
+
 .fas {
 
     font-size: 80px;
@@ -857,6 +929,7 @@ hr{
     content: '';
 
 }
+
 .circle,
 .circle::before,
 .circle::after {
@@ -881,6 +954,7 @@ hr{
     color: #FFFFFF;
     box-shadow: 0 0 30px rgba(0,0,0,0.9);
 }
+
 .circle::after {
     top: 0;
     left: 0;
@@ -890,8 +964,13 @@ hr{
     -webkit-transform: scale(.5);
     transform: scale(.5);
 }
+
 .circle:hover::after {
+
     background:#FFFFFF;
+
+    
+
     border-radius: 50%;
     -webkit-transform: scale(.9);
     transform: scale(.9);
@@ -900,13 +979,15 @@ hr{
 .circle2 {
     opacity: 1;
 }
-.heading{
-    color:#687276;
+
+.heading {
+    color: #687276;
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: all ease-in-out 0.4s;
 }
-.heading:hover{
+
+.heading:hover {
     color: black;
     border-color: white;
 }
@@ -918,4 +999,35 @@ hr{
 }
 .table{
     font-family: "Montserrat"
+}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    filter: invert(100%);
+}
+
+.carousel-item .col-1{
+    max-width: 15%;
+}
+.carousel-item .col-1 img{
+    margin-left: 45px;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 20vh;
+    object-fit: contain;
+    margin-left: 5.6rem;
+}
+
+.partner_title{
+    font-family: "Alien Robot";
+    font-size: 1.7rem;
+}
+
+.inscription{
+    font-size: 1rem;
+}
+
+.card-gallery-random{
+    max-width: 30rem;
 }
