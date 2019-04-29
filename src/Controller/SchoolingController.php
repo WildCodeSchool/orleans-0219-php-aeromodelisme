@@ -8,7 +8,7 @@
 
 namespace App\Controller;
 
-class EcolageController extends AbstractController
+class SchoolingController extends AbstractController
 {
 
     /**
@@ -19,8 +19,8 @@ class EcolageController extends AbstractController
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    public function ecolage()
+    public function index()
     {
-        return $this->twig->render('Club/ecolage.html.twig');
+        return $this->twig->render('Club/index.html.twig');
     }
 }
