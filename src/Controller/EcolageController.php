@@ -8,7 +8,7 @@
 
 namespace App\Controller;
 
-class EcolageController extends AbstractController
+class SchoolingController extends AbstractController
 {
 
     /**
