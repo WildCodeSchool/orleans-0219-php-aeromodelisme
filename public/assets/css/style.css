@@ -106,6 +106,56 @@ h1, h2, h3, h4, h5,
     background-repeat: no-repeat;
 }
 
+/***** Informations style *****/
+
+.informationTitle{
+    justify-content: center;
+    margin-top: 3%;
+    text-align: center;
+    font-family: "Alien Robot";
+    font-size: calc(2vw + 12pt);
+
+}
+
+.infrastructuresText{
+    font-size: calc(0.2vw + 12pt);
+}
+
+.infrastructureTitle{
+    justify-content: center;
+    margin-top: 3%;
+    font-family: "Alien Robot";
+    color: red;
+    font-size: calc(1vw + 8pt);
+}
+
+.terrainTitle{
+    justify-content: center;
+    margin-top: 3%;
+    text-align: center;
+    font-family: "Alien Robot";
+    color: #0f3d7f;
+    font-size: calc(1vw + 8pt);
+}
+
+.terrainText{
+
+    font-size: calc(0.2vw + 12pt);
+}
+
+.schemaTitle{
+    justify-content: center;
+    margin-top: 3%;
+    text-align: center;
+    font-family: "Alien Robot";
+    color: red;
+    font-size: calc(1vw + 8pt);
+}
+
+.containerInformation{
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
 
 /*****Class ftco style *****/
 
@@ -866,6 +916,29 @@ hr {
     border-color: black;
 }
 
-.inscription {
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    filter: invert(100%);
+}
+
+.carousel-item .col-1{
+    max-width: 15%;
+}
+.carousel-item .col-1 img{
+    margin-left: 45px;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 20vh;
+    object-fit: contain;
+    margin-left: 5.6rem;
+}
+
+.partner_title{
+    font-family: "Alien Robot";
+    font-size: 1.7rem;
+}
+
+.inscription{
     font-size: 1rem;
 }
