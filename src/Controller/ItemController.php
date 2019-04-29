@@ -37,7 +37,7 @@ class ItemController extends AbstractController
 
 
     /**
-     * Display item informations specified by $id
+     * Display item Informations specified by $id
      *
      * @param int $id
      * @return string

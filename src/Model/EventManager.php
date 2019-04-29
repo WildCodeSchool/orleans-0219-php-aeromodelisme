@@ -29,7 +29,7 @@ class EventManager extends AbstractManager
 
 
     /**
-     * Select events
+     * Select events for next 30 days
      * @return array
      */
     public function selectEvents(): array
