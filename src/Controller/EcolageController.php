@@ -19,7 +19,7 @@ class EcolageController extends AbstractController
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    public function ecolage()
+    public function schooling()
     {
         return $this->twig->render('Club/ecolage.html.twig');
     }
