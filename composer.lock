@@ -1902,7 +1902,9 @@
         },
         {
             "name": "symfony/config",
+
             "version": "v4.2.6",
+          
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/config.git",
@@ -1965,7 +1967,9 @@
         },
         {
             "name": "symfony/console",
+
             "version": "v4.2.6",
+
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/console.git",
@@ -2105,6 +2109,7 @@
         },
         {
             "name": "symfony/dependency-injection",
+
             "version": "v4.2.6",
             "source": {
                 "type": "git",
@@ -2115,6 +2120,7 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/dependency-injection/zipball/6238d050f5076314beb411ed02eeaec3d3a94f21",
                 "reference": "6238d050f5076314beb411ed02eeaec3d3a94f21",
+
                 "shasum": ""
             },
             "require": {
@@ -2174,11 +2180,13 @@
             ],
             "description": "Symfony DependencyInjection Component",
             "homepage": "https://symfony.com",
+
             "time": "2019-04-12T15:32:33+00:00"
         },
         {
             "name": "symfony/event-dispatcher",
             "version": "v4.2.6",
+
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/event-dispatcher.git",
@@ -2242,7 +2250,9 @@
         },
         {
             "name": "symfony/filesystem",
+
             "version": "v4.2.6",
+
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/filesystem.git",
@@ -2292,7 +2302,9 @@
         },
         {
             "name": "symfony/finder",
+
             "version": "v4.2.6",
+
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/finder.git",
@@ -2341,7 +2353,9 @@
         },
         {
             "name": "symfony/options-resolver",
+
             "version": "v4.2.6",
+
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
@@ -2395,7 +2409,9 @@
         },
         {
             "name": "symfony/process",
+
             "version": "v4.2.6",
+
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/process.git",
@@ -2444,7 +2460,9 @@
         },
         {
             "name": "symfony/yaml",
+
             "version": "v4.2.6",
+
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",

@@ -106,6 +106,56 @@ h1, h2, h3, h4, h5,
     background-repeat: no-repeat;
 }
 
+/***** Activities page *****/
+
+.activitiesTitle{
+    justify-content: center;
+    margin-top: 3%;
+    text-align: center;
+    margin-bottom: 5%;
+    font-family: "Alien Robot";
+    font-size: calc(2vw + 24pt);
+    color: #000000;
+}
+
+.cardActivities2{
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+}
+
+.activitieTitlePlane{
+    font-family: "Alien Robot";
+    margin-top: 3vw;
+    color: red;
+}
+
+.activitieTitleGlider {
+    font-family: "Alien Robot";
+    margin-top: 3vw;
+    color: #0f3d7f;
+}
+
+.activitieTitleHelico {
+    font-family: "Alien Robot";
+    margin-top: 3vw;
+    color: red;
+}
+
+.activitieTitleIndoor {
+    font-family: "Alien Robot";
+    margin-top: 3vw;
+    color: #0f3d7f;
+}
+
+.textActivities{
+    font-size: calc(0.2vw + 12pt);
+    color: black;
+}
+
+.cardActivities1{
+    margin-top: 3vw;
+}
+
 /***** Informations style *****/
 
 .informationTitle{
