@@ -1,4 +1,4 @@
-(function () {
+function drawPlane  (canvas) {
 
     var unit= 50,canvas, context, canvas2, context2,
         height, width, xAxis, yAxis,
@@ -7,9 +7,8 @@
     /**
      * Init function.Initialize variables and begin the animation.
      */
-    function init() {
+    function init(canvas) {
 
-        canvas = document.getElementById("sineCanvas");
         context = canvas.getContext("2d");
 
         height = canvas.height;
@@ -130,6 +129,11 @@
         context.stroke();
     }
 
-    init();
+    init(canvas);
+    //init(document.getElementById("sineCanvas2"));
 
-})();
+}
+
+drawPlane(document.getElementById("sineCanvas"));
+drawPlane(document.getElementById("sineCanvas2"));
+drawPlane(document.getElementById("sineCanvas3"));

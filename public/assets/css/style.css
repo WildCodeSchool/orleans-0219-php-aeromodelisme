@@ -113,7 +113,6 @@ h1, h2, h3, h4, h5,
     margin-top: 3%;
     text-align: center;
     margin-bottom: 5%;
-    font-family: "Alien Robot";
     font-size: calc(2vw + 24pt);
     color: #000000;
 }
@@ -124,25 +123,21 @@ h1, h2, h3, h4, h5,
 }
 
 .activitieTitlePlane{
-    font-family: "Alien Robot";
     margin-top: 3vw;
     color: red;
 }
 
 .activitieTitleGlider {
-    font-family: "Alien Robot";
     margin-top: 3vw;
     color: #0f3d7f;
 }
 
 .activitieTitleHelico {
-    font-family: "Alien Robot";
     margin-top: 3vw;
     color: red;
 }
 
 .activitieTitleIndoor {
-    font-family: "Alien Robot";
     margin-top: 3vw;
     color: #0f3d7f;
 }
@@ -183,6 +178,14 @@ h1 {
 }
 
 #canvas-container{
+    text-align: center;
+}
+
+#canvas-container2{
+    text-align: center;
+}
+
+#canvas-container3{
     text-align: center;
 }
 
