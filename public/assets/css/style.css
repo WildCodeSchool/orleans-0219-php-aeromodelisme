@@ -870,7 +870,6 @@ hr{
 .circle {
     position: relative;
     z-index: 2;
-
     border: 3px solid white;
     color: #fff;
     line-height: 50px;
