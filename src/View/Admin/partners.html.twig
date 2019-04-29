@@ -23,7 +23,7 @@
                             <tr>
                                 <th scope="row">{{ partner.id }}</th>
                                 <td>{{ partner.name|title }}</td>
-                                <td><a class="btn btn-danger" href="#" role="button">Supprimer</a></td>
+                                <td><form method="post" action="/Admin/deletePartner"><button type="submit" name="id" value="{{ partner.id }}" class="btn btn-danger">Supprimer</button></form></td>
                             </tr>
                         {% endfor %}
 
