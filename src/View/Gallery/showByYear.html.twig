@@ -1,0 +1,32 @@
+{% extends 'userlayout.html.twig' %}
+
+{% block content %}
+
+    <div class="container py-5" id="gallery">
+
+    <h3 class="title3 pb-4">Galerie</h3>
+    <form class="mb-5" method="get" action="/Gallery/showByYear/#gallery">
+        <div class="input-group">
+            <select class="custom-select" name="year" aria-label="Choix entre les différentes années">
+                {% for year in years %}
+                    <option value="{{ year.year }}" {% if year.year == actualYear %} selected {% endif %}>{{ year.year }}</option>
+                {% endfor %}
+            </select>
+            <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit">S'envoler</button>
+            </div>
+        </div>
+    </form>
+
+    <div class="row">
+        <div class="card-columns">
+            {% for picture in pictures %}
+                <div class="card card-pin">
+                    <img class="card-img card-img-gallery" src="/assets/images/gallery/{{ picture.img }}"
+                         alt="Card image">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock %}
