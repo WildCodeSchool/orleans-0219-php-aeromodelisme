@@ -34,8 +34,8 @@ function drawPlane  (canvas) {
 
         // BLUE gradient
         grd = context.createLinearGradient(0.000, 0.000, 800.000, 0.000);
-        grd.addColorStop(0, 'rgba(189, 106, 155, 1.000)');
-        grd.addColorStop(1, 'rgba(189, 106, 155, 0.00)');
+        grd.addColorStop(0, 'rgba(220, 53, 69, 1.000)');
+        grd.addColorStop(1, 'rgba(245, 223, 22, 0.0)');
         context.strokeStyle = grd;
         context.lineWidth = 2;
         // BLUE sine
@@ -47,7 +47,7 @@ function drawPlane  (canvas) {
 
         //GREEN gradient
         grd = context.createLinearGradient(0.000, 0.000, 800.000, 0.000);
-        grd.addColorStop(0, 'rgba(151, 204, 18, 1.000)');
+        grd.addColorStop(0, 'rgba(15, 61, 127, 1.000)');
         grd.addColorStop(1, 'rgba(151, 204, 18, 0.000)');
         context.strokeStyle = grd;
         // GREEN sine
@@ -59,7 +59,7 @@ function drawPlane  (canvas) {
 
         //YELLOW Gradient
         grd = context.createLinearGradient(0.000, 0.000, 800.000, 0.000);
-        grd.addColorStop(0,  'rgba(245, 223, 22, 1.000)');
+        grd.addColorStop(0,  'rgba(220, 53, 69, 1.000)');
         grd.addColorStop(1, 'rgba(245, 223, 22, 0.0)');
         context.strokeStyle = grd;
         //YELLOW sine
@@ -71,8 +71,8 @@ function drawPlane  (canvas) {
 
         //RED Gradient
         grd = context.createLinearGradient(0.000, 0.000, 800.000, 0.000);
-        grd.addColorStop(0,  'rgba(204, 63, 24, 1.000)');
-        grd.addColorStop(1, 'rgba(204, 63, 24, 0.000)');
+        grd.addColorStop(0,  'rgba(15, 61, 127, 1.000)');
+        grd.addColorStop(1, 'rgba(151, 204, 18, 0.000)');
         context.strokeStyle = grd;
         //RED sine
         context.beginPath();
@@ -120,8 +120,8 @@ function drawPlane  (canvas) {
         // Cache position of arrow on the circle
         var y = xAxis + (unitVal / 3) * Math.sin(t) * direction;
         var img = new Image();
-        img.src = "http://i.imgur.com/LsYmdkL.png";
-        //img.src = "https://i.imgur.com/bYuAw4C.png";
+        // img.src = "http://i.imgur.com/LsYmdkL.png";
+        img.src = "https://i.imgur.com/bYuAw4C.png";
         // Draw yAxis bead
         context.beginPath();
         context.drawImage(img, yAxis - 29  + offset , y - 16 );
