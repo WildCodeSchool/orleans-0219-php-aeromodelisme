@@ -807,7 +807,7 @@ hr{
 
 /**Activities Style**/
 .back_act{
-    background-image: url("https://images.unsplash.com/photo-1439950637860-4d7b4833e2e5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1506&q=80");
+    background-image: url("/assets/images/back_icone_act.jpeg");
     background-size:cover;
     background-repeat: no-repeat;
     height: 100%;
