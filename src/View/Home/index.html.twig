@@ -18,6 +18,25 @@
 
     <section class="ftco-section bg-grey py-5">
         <h3 class="title3">La meteo</h3>
+{%  for tempmin in tempsmin %}
+    {{ tempmin }}
+{% endfor %}<br />
+        {%  for tempmax in tempsmax %}
+            {{ tempmax }}
+        {% endfor %}<br />
+        {%  for windlogo in windlogos %}
+            {{ windlogo }}
+        {% endfor %}<br />
+        {% for meteoimg in meteoimgs %}
+            {{ meteoimg }}
+        {% endfor %}<br />
+        {% for meteotitle in meteotitles %}
+            {{ meteotitle }}<br />
+        {% endfor %}
+        {% for day in days %}
+            {{ day }}
+        {% endfor %}<br />
+        {{ town }}
 
         <a href="https://www.tameteo.com/meteo_Saint+Jean+de+la+Ruelle-Europe-France-Loiret--1-24379.html"
            target="_blank" class="container embed-responsive text-center pt-5">
