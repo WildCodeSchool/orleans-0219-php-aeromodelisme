@@ -12,7 +12,7 @@ class SchoolingController extends AbstractController
 {
 
     /**
-     * Display home page
+     * Display index page from Schooling 
      *
      * @return string
      * @throws \Twig\Error\LoaderError
@@ -21,6 +21,6 @@ class SchoolingController extends AbstractController
      */
     public function index()
     {
-        return $this->twig->render('Club/index.html.twig');
+        return $this->twig->render('Schooling/index.html.twig');
     }
 }
