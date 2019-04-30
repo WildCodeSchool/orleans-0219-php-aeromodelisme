@@ -677,10 +677,25 @@ h1, h2, h3, h4, h5,
     margin-bottom: 30px;
 }
 
-.card .img {
-    border: 1px solid #f0f0f0;
-    margin: 0 auto;
-    border-radius: 50%;
+.staff .card {
+    padding :1em;
+    min-height: 523px;
+}
+
+.staff .card .card-img-top {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: ease-out 0.2s;
+}
+
+.staff .card .card-img-top:hover {
+    transition: ease-in 0.2s ;
+    filter: none;
+}
+
+.staff .date{
+    font-size: 1.5em;
+    color: black;
 }
 
 .card {
