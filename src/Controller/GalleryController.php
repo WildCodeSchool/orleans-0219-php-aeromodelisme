@@ -27,4 +27,21 @@ class GalleryController extends AbstractController
         $randomPicture = $galleryManager->randomPicture();
         return $this->twig->render('Gallery/index.html.twig', ['randomPicture' => $randomPicture]);
     }
+
+    public function showByYear()
+    {
+        $galleryManager = new GalleryManager();
+        $pictures = $galleryManager->selectAll();
+        $year=null;
+
+        if ($_SERVER['REQUEST_METHOD'] === 'GET' && !empty($_GET['year'])) {
+            $year = $_GET['year'];
+            $pictures = $galleryManager->selectByYear($year);
+        }
+
+        $years = $galleryManager->selectAllYears();
+        return $this->twig->render('Gallery/showByYear.html.twig', ['years'=> $years,
+                                                                          'actualYear'=>$year,
+                                                                          'pictures'=> $pictures]);
+    }
 }
