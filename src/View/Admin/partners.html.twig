@@ -1,0 +1,36 @@
+{% extends 'adminlayout.html.twig' %}
+
+{% block title %} - Gestion des partenaires {% endblock %}
+
+
+{% block content %}
+    <section class="ftco-section mt-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="history">
+                    <h3 class="title3 pb-4">Gestion des partenaires</h3>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Numéro</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        {% for partner in partners %}
+                            <tr>
+                                <th scope="row">{{ partner.id }}</th>
+                                <td>{{ partner.name|title }}</td>
+                                <td><a class="btn btn-danger" href="#" role="button">Supprimer</a></td>
+                            </tr>
+                        {% endfor %}
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}
