@@ -966,6 +966,89 @@ hr {
     border-color: black;
 }
 
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.25;
+}
+.ecolage-text {
+    font-size: 1.2em;
+}
+.ecolage-table{
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+.ecolage-table th {
+    color: white;
+    padding: 0.9em;
+    text-transform: uppercase;
+    font-size: 1.10em;
+}
+.ecolage-table td {
+    font-size: 1.1em;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    table-layout: fixed;
+    z-index: 0;
+}
+
+
+table tr {
+    background-color: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: .35em;
+}
+
+table th,
+table td {
+   padding: .825em;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+td.contact {
+    text-align: left;
+}
+.fa-envelope {
+    color: darkred;
+}
+
+table th {
+    font-size: .85em;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+
+.ecolage{
+    width: 100%;
+    justify-content: center;
+}
+.hr-card{
+    width: 80%;
+    color: gray;
+}
+
+.info {
+    border: none;
+}
+
+.info .bg-danger{
+    color: white;
+}
+
+.brevet {
+    text-transform: uppercase;
+    font-size: 1.25em;
+}
+
+.qualif {
+    text-transform: uppercase;
+    font-size: 1.25em;
+
 .carousel-control-next-icon, .carousel-control-prev-icon {
     filter: invert(100%);
 }
@@ -987,6 +1070,7 @@ hr {
 .partner_title{
     font-family: "Alien Robot";
     font-size: 1.7rem;
+
 }
 
 .inscription{
