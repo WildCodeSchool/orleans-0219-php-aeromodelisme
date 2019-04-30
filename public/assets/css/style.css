@@ -1082,3 +1082,23 @@ table th {
 .card-gallery-random{
     max-width: 30rem;
 }
+
+/*---------GALERIE----------*/
+
+.btn-archive{
+    font-size: 1.8rem;
+}
+
+.card-pin{
+    display: block;
+    width: 100%;
+    height: auto;
+    filter: grayscale(80%);
+    transition: all 0.3s ease-out;
+}
+
+.card-pin:hover{
+    box-shadow: 0 0 0;
+    filter: none;
+    transition: all 0.3s ease-in;
+}
