@@ -21,11 +21,11 @@ class MemberController extends AbstractController
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    public function members()
+    public function index()
     {
         $MembersManager = new MembersManager();
         $Members = $MembersManager->selectAll();
 
-        return $this->twig->render('Member/members.html.twig', ['members' => $Members]);
+        return $this->twig->render('Member/index.html.twig', ['members' => $Members]);
     }
 }
