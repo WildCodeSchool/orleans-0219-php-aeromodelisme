@@ -35,14 +35,15 @@ class EventManager extends AbstractManager
     public function selectEvents(): array
     {
         return $this->pdo->query('SELECT * ,date_format(event_date, \'%d/%m/%Y\') AS date,date_add(curdate(),
- interval 30 DAY) AS date_exp  FROM ' . $this->table . ' HAVING event_date < date_exp and event_date >= curdate()')->fetchAll();
+ interval 30 DAY) AS date_exp  FROM ' . $this->table .
+            ' HAVING event_date < date_exp and event_date >= curdate()')->fetchAll();
     }
 
     /**
      * @param array $event
      * @return bool
      */
-    public function update(array $event):bool
+    public function update(array $event): bool
     {
         // prepared request
         $statement = $this->pdo->prepare("UPDATE $this->table SET `title` = :title, `event_date` = :event_date,
