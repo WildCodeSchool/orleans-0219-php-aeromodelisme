@@ -206,12 +206,9 @@ h1, h2, h3, h4, h5,
 body {
     height: 100%;
     width: 100%;
-    /*background: #1b1d21;*/
-    /*background-image: url(http://www.transparenttextures.com/patterns/carbon-fibre.png);*/
     font-family: 'Open Sans', sans-serif;
 
 }
-
 
 h1 {
     font-family: 'Open Sans', sans-serif;
@@ -237,11 +234,6 @@ h1 {
 #canvas-container3{
     text-align: center;
 }
-
-
-
-
-
 
 /*****Class ftco style *****/
 
