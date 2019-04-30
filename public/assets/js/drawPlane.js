@@ -133,7 +133,3 @@ function drawPlane  (canvas) {
     //init(document.getElementById("sineCanvas2"));
 
 }
-
-drawPlane(document.getElementById("sineCanvas"));
-drawPlane(document.getElementById("sineCanvas2"));
-drawPlane(document.getElementById("sineCanvas3"));

@@ -147,3 +147,12 @@
 </section>
 
 {% endblock %}
+
+{% block javascript %}
+<script type="text/javascript" src="/assets/js/drawPlane.js"></script>
+<script type="text/javascript">
+    drawPlane(document.getElementById("sineCanvas"));
+    drawPlane(document.getElementById("sineCanvas2"));
+    drawPlane(document.getElementById("sineCanvas3"));
+</script>
+{% endblock %}
