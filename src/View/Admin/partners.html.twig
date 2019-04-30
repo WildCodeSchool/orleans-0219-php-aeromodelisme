@@ -19,19 +19,19 @@
                         </thead>
                         <tbody>
 
-                        {% for partner in partners %}
-                            <tr>
-                                <th scope="row">{{ partner.id }}</th>
-                                <td>{{ partner.name|title }}</td>
-                                <td>
-                                    <form method="post" action="/Admin/deletePartner">
-                                        <button onsubmit="return RemovePartner()" onclick="return RemovePartner()"
-                                                name="id" value="{{ partner.id }}" class="btn btn-danger">Supprimer
+                        <form method="post" id="deleteForm" action="/Admin/deletePartner">
+                            {% for partner in partners %}
+                                <tr>
+                                    <th scope="row">{{ partner.id }}</th>
+                                    <td>{{ partner.name|title }}</td>
+                                    <td>
+                                        <button type="submit"
+                                               name="id" value="{{ partner.id }}" class="btn btn-danger">Supprimer
                                         </button>
-                                    </form>
-                                </td>
-                            </tr>
-                        {% endfor %}
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </form>
 
                         </tbody>
                     </table>
@@ -40,16 +40,19 @@
         </div>
     </section>
 
-{% endblock %}
+    {% block javascript %}
+    <script type="text/javascript">
 
-{% block javascript %}
-<script type = "text/javascript" >
-    function RemovePartner() {
+    document.getElementById("deleteForm").onsubmit = function () {
         if (confirm("Voulez-vous supprimer le partenaire ?")) {
             return true;
         } else {
             return false;
         }
     }
-    < /script>
+
+    </script>
+    {% endblock %}
+
 {% endblock %}
+
