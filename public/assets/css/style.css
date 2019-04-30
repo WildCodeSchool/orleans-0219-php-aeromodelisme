@@ -41,6 +41,13 @@ body.menu-show {
     font-style: normal;
 }
 
+@font-face {
+    font-family: "Milestone";
+    src: url("../fonts/MilestoneFreeVersion-Script.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 span {
     color: #76797f;
 }
@@ -68,43 +75,43 @@ h1, h2, h3, h4, h5,
 
 /***Header style ***/
 
-.jumbotron-fluid {
-    background-image: url('../images/avion2flip.jpg');
+.jumbotron-fluid{
+    background-image: url('../images/big-one.jpg');
 }
 
-.title {
-    font-size: calc(5vw + 14pt);
-    color: #0f3d7f;
+.title{
+    background: -webkit-linear-gradient(left, #0f3d7f, #0f3d7f, #dc3545, #dc3545, #dc3545);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: calc(8vw + 14pt);
+    color: #dc3545;
     text-transform: uppercase;
-    font-family: "Android Assassin";
+    font-family: "Milestone";
     line-height: 1.4;
-    text-shadow: 0.1em 0.1em #FFFFFF;
-    padding-left: 10%;
-    padding-bottom: 7%;
-
-}
-
-.title2 {
-
-    font-size: calc(2vw + 7pt);
-    text-shadow: 0.1em 0.1em #0f3d7f;
-    font-family: "Montserrat", Arial, sans-serif;
-    line-height: 1.4;
-    color: #FFFFFF;
-    font-weight: 400;
-}
-
-.logo {
     padding-left: 2%;
-    padding-top: 1%;
+    margin-top: 2%;
+    transform: rotate(-10deg);
 }
 
+.title2{
+
+    font-size: calc(4vw + 7pt);
+    text-shadow: 4px 3px black;
+    font-family: "Milestone";
+    line-height: 1.4;
+    -webkit-text-fill-color: #ffffff;
+    font-weight: 400;
+    padding-left:13%;
+    transform: rotate(-10deg);
+    padding-top: 0.3%;
+}
 
 .hero-wrap {
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 
 /***** Activities page *****/
 
