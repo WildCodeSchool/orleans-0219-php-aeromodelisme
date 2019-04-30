@@ -95,6 +95,8 @@ class AdminController extends AbstractController
                 $eventManager->update($event);
             }
         }
+        return $this->twig->render('Admin/editevent.html.twig', ['event' => $event, 'error' => $failed]);
+    }
 
     public function partners()
     {
@@ -102,5 +104,21 @@ class AdminController extends AbstractController
         $partners = $partnerManager->selectAll();
 
         return $this->twig->render('Admin/partners.html.twig', ['partners' => $partners]);
+    }
+
+    public function deletePartner() : void
+    {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $partnerManager = new PartnerManager();
+            $id = $_POST['id'];
+            $partner = $partnerManager->selectOneById($id);
+            $partnerImg = $partner['image'];
+            $partnerManager->delete($id);
+
+            if (file_exists('../public/assets/images/partner/'. $partnerImg)) {
+                unlink('../public/assets/images/partner/'. $partnerImg);
+                header('Location: /Admin/partners');
+            }
+        }
     }
 }
