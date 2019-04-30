@@ -8,11 +8,13 @@
 
 namespace App\Controller;
 
+use App\Model\PartnerManager;
+
 class SchoolingController extends AbstractController
 {
 
     /**
-     * Display index page from Schooling 
+     * Display index page from Schooling
      *
      * @return string
      * @throws \Twig\Error\LoaderError
@@ -21,6 +23,9 @@ class SchoolingController extends AbstractController
      */
     public function index()
     {
-        return $this->twig->render('Schooling/index.html.twig');
+        $partnerManager = new PartnerManager();
+        $partners = $partnerManager->selectAll();
+
+        return $this->twig->render('Schooling/index.html.twig', ['partners' => $partners]);
     }
 }
