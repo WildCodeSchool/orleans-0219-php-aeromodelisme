@@ -4,4 +4,5 @@
 *.cache
 db.php
 .idea
-/public/assets/images/
+/public/assets/images/gallery/
+/public/assets/images/events/
