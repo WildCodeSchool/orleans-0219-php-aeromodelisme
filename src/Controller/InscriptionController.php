@@ -9,9 +9,8 @@
 namespace App\Controller;
 
 use App\Model\PartnerManager;
-use App\Model\EventManager;
 
-class HomeController extends AbstractController
+class InscriptionController extends AbstractController
 {
 
     /**
@@ -26,9 +25,7 @@ class HomeController extends AbstractController
     {
         $partnerManager = new PartnerManager();
         $partners = $partnerManager->selectAll();
-        $eventManager = new EventManager();
-        $events = $eventManager->selectEvents();
-      
-        return $this->twig->render('Home/index.html.twig', ['events' => $events, 'partners' => $partners]);
+
+        return $this->twig->render('Inscription/index.html.twig', ['partners' => $partners]);
     }
 }
