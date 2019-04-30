@@ -8,6 +8,8 @@
 
 namespace App\Controller;
 
+use App\Model\PartnerManager;
+
 class LegalController extends AbstractController
 {
 
@@ -21,6 +23,9 @@ class LegalController extends AbstractController
      */
     public function legalmentions()
     {
-        return $this->twig->render('Legal/legalmentions.html.twig');
+        $partnerManager = new PartnerManager();
+        $partners = $partnerManager->selectAll();
+
+        return $this->twig->render('Legal/legalmentions.html.twig', ['partners' => $partners]);
     }
 }

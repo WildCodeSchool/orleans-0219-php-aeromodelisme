@@ -4,7 +4,6 @@
 
 
 {% block content %}
-
     <section class="ftco-section mt-4">
         <div class="container">
             <div class="row">
@@ -72,7 +71,7 @@
                             <div class="card">
                                 <img class="card-img-top" src="{{ event.picture }}" alt="affiche evenement">
                                 <div class="card-body">
-                                    <p>{{ event.date }}</p>
+                                    <p class="date">{{ event.date }}</p>
                                     <h4 class="card-title">{{ event.title }}</h4>
                                     <p class="card-text">{{ event.description }}</p>
                                 </div>
