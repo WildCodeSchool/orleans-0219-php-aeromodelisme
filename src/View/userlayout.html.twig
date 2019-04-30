@@ -3,13 +3,10 @@
 {% block header %}
     <header>
         <div class="jumbotron hero-wrap jumbotron-fluid">
-            <div class="logo">
-                <a href="/" class=""><span><img src="assets/images/LogoRCMCO.gif" alt="logo du club"></span></a>
-            </div>
             <div class="container-fluid">
                 <div class="row mt-5 mt-lg-0">
-                <h1 class=" title col-lg-7 mb-5 mt-5 pt-5 mt-lg-1 pt-lg-1 display-4">R.C.M.C.O</h1>
-                <h2 class="title2 col-lg-10 mt-5 pt-5 mt-lg-1 pt-lg-1 lead">Club d'aeromodelisme Orleanais</h2>
+                <h1 class="title col-lg-7 mt-md-1 pt-md-1 mt-lg-1 pt-lg-1 display-4">R.C.M.C.O</h1>
+                <h2 class="title2 col-lg-10 mt-sm-1 pt-sm-1 pt-md-5 mt-md-5 mt-lg-1 pt-lg-1 lead">Club d'aeromodelisme Orleanais</h2>
                 </div>
             </div>
         </div>
@@ -20,9 +17,8 @@
 
 {% block nav %}
 
-    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light" id="ftco-navbar">
-        <div class="container">
-            <a class="navbar-brand" href="/">RCMCO</a>
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light text-left" id="ftco-navbar">
+            <a class="navbar-brand" href="/"><img src="/assets/images/LogoRCMCO.gif" alt=""></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
                     aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>Menu
@@ -30,39 +26,46 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active"><a href="#" class="nav-link">Accueil</a></li>
+                    <li class="nav-item active"><a href="/" class="nav-link">Accueil</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Activités
                         </a>
                         <div class="dropdown-menu shadow-sm border-0 rounded-0" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Avions</a>
-                            <a class="dropdown-item" href="#">Planeurs</a>
-                            <a class="dropdown-item" href="#">Hélicoptères</a>
-                            <a class="dropdown-item" href="#">Indoor</a>
+                            <a class="dropdown-item" href="/Activities/index#plane">Avions</a>
+                            <a class="dropdown-item" href="/Activities/index#glider">Planeurs</a>
+                            <a class="dropdown-item" href="/Activities/index#helico">Hélicoptères</a>
+                            <a class="dropdown-item" href="/Activities/index#indoor">Indoor</a>
                         </div>
                     </li>
                     <li class="nav-item"><a href="#" class="nav-link">Ecolage</a></li>
                     <li class="nav-item"><a href="#" class="nav-link">Galerie</a></li>
                     <li class="nav-item"><a href="/Inscription/index" class="nav-link">Inscription</a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button"
+                        <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink1" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Le club
                         </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-                            <a class="dropdown-item" href="#">Informations</a>
+
+                        <div class="dropdown-menu shadow-sm border-0 rounded-0" aria-labelledby="navbarDropdownMenuLink1">
+                            <a class="dropdown-item" href="/Informations/index">Informations</a>
                             <a class="dropdown-item" href="#">Membres du bureau</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="/#form-footer" class="nav-link">Contact</a></li>
                 </ul>
             </div>
-        </div>
     </nav>
 
 {% endblock %}
+
+{% block partners %}
+
+{% include '_partner.html.twig' %}
+
+{% endblock %}
+
 {% block footer %}
     <footer class="footer bg-danger pt-5 pb-3">
         <div class="footer-container container-fluid">
@@ -85,7 +88,7 @@
                 </div>
                     <form class="col-12 col-xl-4">
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div id="form-footer" class="form-group col-md-6">
                             <label for="inputName4">Nom</label>
                             <input type="text" class="form-control" id="inputName4" name="lastname" required placeholder="Jean">
                         </div>
@@ -116,9 +119,9 @@
             </div>
             <hr class="bg-grey mt-2">
             <div class="row justify-content-center">
-                <div class="signature col-12 col-md-8">
-                    <p> The wild'n roses : <a href="#">Jean-Christophe Roger</a> - <a href="#">Nawal Zakarya</a> - <a href="#">Vinvent Ostyn</a> - <a href="#">Manuel Leger</a> - <a href="#">Emilie Serre</a> | <a href="#">Mentions légales</a></p>
-                </div>
+                 <div class="signature col-12 col-md-8">
+                    <p> The guns n' wilders : <a href="#">Jean-Christophe Roger</a> - <a href="#">Nawal Zakarya</a> - <a href="#">Vinvent Ostyn</a> - <a href="#">Manuel Leger</a> - <a href="#">Emilie Serre</a> | <a href="#">Mentions légales</a></p>
+                 </div>
             </div>
         </div>
     </footer>

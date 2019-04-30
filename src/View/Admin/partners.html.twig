@@ -1,0 +1,58 @@
+{% extends 'adminlayout.html.twig' %}
+
+{% block title %} - Gestion des partenaires {% endblock %}
+
+
+{% block content %}
+    <section class="ftco-section mt-4">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="history">
+                    <h3 class="title3 pb-4">Gestion des partenaires</h3>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Numéro</th>
+                            <th scope="col">Nom</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+
+                        <form method="post" id="deleteForm" action="/Admin/deletePartner">
+                            {% for partner in partners %}
+                                <tr>
+                                    <th scope="row">{{ partner.id }}</th>
+                                    <td>{{ partner.name|title }}</td>
+                                    <td>
+                                        <button type="submit"
+                                               name="id" value="{{ partner.id }}" class="btn btn-danger">Supprimer
+                                        </button>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        </form>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% block javascript %}
+    <script type="text/javascript">
+
+    document.getElementById("deleteForm").onsubmit = function () {
+        if (confirm("Voulez-vous supprimer le partenaire ?")) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    </script>
+    {% endblock %}
+
+{% endblock %}
+

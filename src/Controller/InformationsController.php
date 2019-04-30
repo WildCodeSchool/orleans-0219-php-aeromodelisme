@@ -1,21 +1,11 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: aurelwcs
- * Date: 08/04/19
- * Time: 18:40
- */
-
 namespace App\Controller;
 
 use App\Model\PartnerManager;
 
-class InscriptionController extends AbstractController
+class InformationsController extends AbstractController
 {
-
     /**
-     * Display home page
-     *
      * @return string
      * @throws \Twig\Error\LoaderError
      * @throws \Twig\Error\RuntimeError
@@ -26,6 +16,6 @@ class InscriptionController extends AbstractController
         $partnerManager = new PartnerManager();
         $partners = $partnerManager->selectAll();
 
-        return $this->twig->render('Inscription/index.html.twig', ['partners' => $partners]);
+        return $this->twig->render('Informations/index.html.twig', ['partners' => $partners]);
     }
 }

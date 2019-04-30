@@ -9,26 +9,23 @@
 namespace App\Controller;
 
 use App\Model\PartnerManager;
-use App\Model\EventManager;
 
-class HomeController extends AbstractController
+class LegalController extends AbstractController
 {
 
     /**
-     * Display home page
+     * Display LegalMentions
      *
      * @return string
      * @throws \Twig\Error\LoaderError
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    public function index()
+    public function legalmentions()
     {
         $partnerManager = new PartnerManager();
         $partners = $partnerManager->selectAll();
-        $eventManager = new EventManager();
-        $events = $eventManager->selectEvents();
-      
-        return $this->twig->render('Home/index.html.twig', ['events' => $events, 'partners' => $partners]);
+
+        return $this->twig->render('Legal/legalmentions.html.twig', ['partners' => $partners]);
     }
 }
