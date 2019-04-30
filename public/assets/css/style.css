@@ -659,7 +659,7 @@ h1, h2, h3, h4, h5,
     position: relative;
 }
 .footer {
-    background-color:#687276;
+
     font-size: 1.3em;
     color: white;
 }
@@ -669,7 +669,9 @@ h1, h2, h3, h4, h5,
 .footer .info p {
     vertical-align: middle;
 }
-
+.footer .fas {
+    font-size: 0.9em;
+}
 .footer p {
     color: white;
 }
