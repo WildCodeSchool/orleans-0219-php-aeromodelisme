@@ -1,0 +1,18 @@
+{% extends 'userlayout.html.twig' %}
+
+{% block content %}
+    <section class="ftco-section">
+        <div class="container justify-content-center">
+            <h3 class="title3 mb-4">Image aleatoire</h3>
+            <div class="card mx-auto text-center card-gallery-random">
+                <img src="/assets/images/gallery/{{ randomPicture.img }}" class="card-img-top"
+                     alt="image de l'evenement {{ randomPicture.event }} en {{ randomPicture.year }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{ randomPicture.year }}</h5>
+                    <p class="card-text">{{ randomPicture.event }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

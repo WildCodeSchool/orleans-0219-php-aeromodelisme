@@ -1,6 +1,8 @@
 <?php
 namespace App\Controller;
 
+use App\Model\PartnerManager;
+
 class InformationsController extends AbstractController
 {
     /**
@@ -11,6 +13,9 @@ class InformationsController extends AbstractController
      */
     public function index()
     {
-        return $this->twig->render('Informations/index.html.twig');
+        $partnerManager = new PartnerManager();
+        $partners = $partnerManager->selectAll();
+
+        return $this->twig->render('Informations/index.html.twig', ['partners' => $partners]);
     }
 }
