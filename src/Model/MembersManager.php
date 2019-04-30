@@ -12,12 +12,12 @@ namespace App\Model;
 /**
  *
  */
-class EventManager extends AbstractManager
+class MembersManager extends AbstractManager
 {
     /**
      *
      */
-    const TABLE = 'events';
+    const TABLE = 'members';
 
     /**
      *  Initializes this class.
@@ -28,13 +28,4 @@ class EventManager extends AbstractManager
     }
 
 
-    /**
-     * Select events
-     * @return array
-     */
-    public function selectEvents(): array
-    {
-        return $this->pdo->query('SELECT * ,date_format(event_date, \'%d/%m/%Y\') AS date,date_add(curdate(),
- interval 30 DAY) AS date_exp  FROM ' . $this->table . ' HAVING event_date < date_exp')->fetchAll();
-    }
 }
