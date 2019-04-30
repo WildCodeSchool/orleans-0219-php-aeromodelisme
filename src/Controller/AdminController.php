@@ -10,6 +10,7 @@
 namespace App\Controller;
 
 use App\Model\EventManager;
+use App\Model\PartnerManager;
 
 /**
  * Class AdminController
@@ -94,6 +95,12 @@ class AdminController extends AbstractController
                 $eventManager->update($event);
             }
         }
-        return $this->twig->render('Admin/editevent.html.twig', ['event' => $event, 'error' => $failed]);
+
+    public function partners()
+    {
+        $partnerManager = new PartnerManager();
+        $partners = $partnerManager->selectAll();
+
+        return $this->twig->render('Admin/partners.html.twig', ['partners' => $partners]);
     }
 }

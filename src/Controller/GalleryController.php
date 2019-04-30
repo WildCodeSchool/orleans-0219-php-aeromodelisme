@@ -8,9 +8,9 @@
 
 namespace App\Controller;
 
-use App\Model\PartnerManager;
+use App\Model\GalleryManager;
 
-class InscriptionController extends AbstractController
+class GalleryController extends AbstractController
 {
 
     /**
@@ -23,9 +23,8 @@ class InscriptionController extends AbstractController
      */
     public function index()
     {
-        $partnerManager = new PartnerManager();
-        $partners = $partnerManager->selectAll();
-
-        return $this->twig->render('Inscription/index.html.twig', ['partners' => $partners]);
+        $galleryManager = new GalleryManager();
+        $randomPicture = $galleryManager->randomPicture();
+        return $this->twig->render('Gallery/index.html.twig', ['randomPicture' => $randomPicture]);
     }
 }
