@@ -24,13 +24,20 @@ class GalleryController extends AbstractController
      */
     public function index()
     {
+        $galleryManager = new GalleryManager();
+        $years = $galleryManager->selectAllYears();
+        $pictures2018 = $galleryManager->gallery2018();
+        $pictures2017 = $galleryManager->gallery2017();
+        $randomPicture = $galleryManager->randomPicture();
+
         $partnerManager = new PartnerManager();
         $partners = $partnerManager->selectAll();
 
-        $galleryManager = new GalleryManager();
-        $randomPicture = $galleryManager->randomPicture();
         return $this->twig->render('Gallery/index.html.twig', ['randomPicture' => $randomPicture,
-                                                                     'partners' => $partners]);
+                                                                     'partners' => $partners,
+                                                                     'pictures2018' => $pictures2018,
+                                                                     'pictures2017' => $pictures2017,
+                                                                      'years' => $years,]);
     }
 
     public function showByYear()
@@ -50,3 +57,4 @@ class GalleryController extends AbstractController
                                                                           'pictures'=> $pictures]);
     }
 }
+
