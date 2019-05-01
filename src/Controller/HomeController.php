@@ -24,7 +24,7 @@ class HomeController extends AbstractController
      */
     public function index()
     {
-        //Meteo
+        //weather
         $var1 = array(0 => "Temp min.");
         $var2 = array(0 => "Temp max.");
         $var3 = array(0 => "Vent");
@@ -43,8 +43,8 @@ class HomeController extends AbstractController
         $tempMax= array ();
         $windLogos = array();
         $windDesc = array();
-        $meteoImg = array ();
-        $meteoTitles = array ();
+        $weatherImg = array ();
+        $weatherTitles = array ();
         $days = array();
 
         for ($i = 0; $i <= 5; $i++) {
@@ -165,8 +165,8 @@ class HomeController extends AbstractController
                 }
             }
             if (isset($var4[$i])) {
-                $meteoImg[] = $var4[$i];
-                $meteoTitles[] = $var4_desc[$i];
+                $weatherImg[] = $var4[$i];
+                $weatherTitles[] = $var4_desc[$i];
             }
             $days[] = $var5[$i];
         }
@@ -181,7 +181,7 @@ class HomeController extends AbstractController
         return $this->twig->render('Home/index.html.twig', ['events' => $events, 'partners' => $partners,
             'tempsmin' => $tempMin, 'tempsmax' => $tempMax,
             'windlogos' => $windLogos, 'winDesc' => $windDesc,
-            'meteoimgs' => $meteoImg, 'meteotitles' => $meteoTitles,
+            'weatherimgs' => $weatherImg, 'weathertitles' => $weatherTitles,
             'days' => $days, 'town' => $town]);
     }
 }
