@@ -4,13 +4,13 @@ namespace App\Controller;
 use App\Model\MemberManager;
 
 /**
- * Class ItemController
+ * Class MemberController
  *
  */
 class MemberController extends AbstractController
 {
     /**
-     * Display item listing
+     * Display members listing
      *
      * @return string
      * @throws \Twig\Error\LoaderError
