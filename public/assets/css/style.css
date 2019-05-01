@@ -910,7 +910,52 @@ hr {
 .block-21 .text .meta > div a {
     color: gray;
 }
+/**Weather style**/
+.weather{
+    background-image: linear-gradient(to bottom, #ffffff, #eff0f5, #dde1eb, #c8d4e0, #b2c7d5);
+}
 
+.town{
+    text-align: center;
+    text-decoration: underline;
+    color: #0f3d7f;
+}
+
+.today0{
+    background-color: #dc3545;
+    color: white;
+}
+
+.weather .day{
+    padding-top: 8%;
+    color: #dc3545;
+    font-weight: bold;
+}
+
+.today0 .day{
+    padding-top: 8%;
+    color: white;
+}
+
+.temp-min{
+    font-weight: bold;
+    color: #0f3d7f;
+}
+
+.temp-max{
+    font-weight: bold;
+    color: #0f3d7f;
+}
+
+.today0 .temp-min{
+    color: white;
+}
+
+.today0 .temp-max{
+    color: white;
+}
+
+/**End Weather style**/
 /**Activities Style**/
 .title_act {
     font-family: "Montserrat", Arial, sans-serif;

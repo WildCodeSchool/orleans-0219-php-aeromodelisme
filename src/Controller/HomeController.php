@@ -35,7 +35,7 @@ class HomeController extends AbstractController
 
         $file = "http://api.tameteo.com/index.php?api_lang=fr&localidad=24379&affiliate_id=lskfarog8448";
         $xml = simplexml_load_file($file);
-        $nday = 7; // for 7 days previsions
+        $nday = 5; // for 5 days previsions
         $url = $xml->location->attributes()->city;
         $array = explode('[', $url);
         $town = trim($array[0]);
