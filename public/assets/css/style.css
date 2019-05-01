@@ -912,31 +912,48 @@ hr {
 }
 
 /**Activities Style**/
-.title_act {
+
+.back_act{
+    background-image: url("/assets/images/back_icone_act.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    opacity: 0.4;
+
+}
+.title_act{
     font-family: "Montserrat", Arial, sans-serif;
-    src: url("../fonts/Alien Robot.otf");
+    color: white;
     font-size: 1.5rem;
 }
-
 .ftco-section {
     padding: 5em 0;
     position: relative;
+
 }
 
 .fas {
-    font-size: 6em;
-}
 
+    font-size: 80px;
+    color: #dc3545;
+    position:relative;
+}
+.fas:hover{
+   color:#dc3545;
+}
 
 .circle {
     margin: 36px;
     display: inline-block;
-    padding: 16px;
+    padding: 10px;
     text-align: center;
-    width: 180px;
-    height: 180px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    border: 2px solid #1d2087;
+
+
+
 }
 
 .circle::before,
@@ -945,6 +962,7 @@ hr {
     z-index: -1;
     display: block;
     content: '';
+
 }
 
 .circle,
@@ -960,15 +978,16 @@ hr {
 .circle {
     position: relative;
     z-index: 2;
-    background-color: #687276;
-    border: 2px solid #5c5eae;
+    border: 3px solid white;
     color: #fff;
     line-height: 50px;
     overflow: hidden;
+    opacity: 1;
 }
 
 .circle:hover {
-    color: #fff;
+    color: #FFFFFF;
+    box-shadow: 0 0 30px rgba(0,0,0,0.9);
 }
 
 .circle::after {
@@ -982,14 +1001,18 @@ hr {
 }
 
 .circle:hover::after {
-    background: #5492E7;
+
+    background:#FFFFFF;
+
+    
+
     border-radius: 50%;
     -webkit-transform: scale(.9);
     transform: scale(.9);
 }
 
 .circle2 {
-    opacity: 0.6;
+    opacity: 1;
 }
 
 .heading {
@@ -1001,7 +1024,13 @@ hr {
 
 .heading:hover {
     color: black;
-    border-color: black;
+    border-color: white;
+}
+/**Member Style**/
+.title_member{
+    text-align: center;
+
+    color: #0f3d7f;
 }
 
 
@@ -1024,41 +1053,6 @@ body {
 }
 .ecolage-table td {
     font-size: 1.1em;
-}
-
-table {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    table-layout: fixed;
-    z-index: 0;
-}
-
-
-table tr {
-    background-color: #f8f8f8;
-    border: 1px solid #ddd;
-    padding: .35em;
-}
-
-table th,
-table td {
-   padding: .825em;
-    text-align: center;
-    font-size: 0.9em;
-}
-
-td.contact {
-    text-align: left;
-}
-.fa-envelope {
-    color: darkred;
-}
-
-table th {
-    font-size: .85em;
-    letter-spacing: .1em;
-    text-transform: uppercase;
 }
 
 .ecolage{
@@ -1086,6 +1080,7 @@ table th {
 .qualif {
     text-transform: uppercase;
     font-size: 1.25em;
+}
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
     filter: invert(100%);
