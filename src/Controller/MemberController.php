@@ -2,6 +2,7 @@
 namespace App\Controller;
 
 use App\Model\MemberManager;
+use App\Model\PartnerManager;
 
 /**
  * Class MemberController
@@ -19,8 +20,11 @@ class MemberController extends AbstractController
      */
     public function index()
     {
+        $partnerManager = new PartnerManager();
+        $partners = $partnerManager->selectAll();
+
         $MemberManager = new MemberManager();
         $Members = $MemberManager->selectAll();
-        return $this->twig->render('Member/index.html.twig', ['members' => $Members]);
+        return $this->twig->render('Member/index.html.twig', ['members' => $Members, 'partners' => $partners]);
     }
 }
