@@ -27,10 +27,19 @@ class GalleryManager extends AbstractManager
         parent::__construct(self::TABLE);
     }
 
-
     public function randomPicture(): array
     {
         return $this->pdo->query("SELECT * FROM $this->table ORDER BY RAND() LIMIT 1")->fetch();
+    }
+
+    public function gallery2018(): array
+    {
+        return $this->pdo->query("SELECT * FROM $this->table WHERE year = 2018")->fetchAll();
+    }
+
+    public function gallery2017(): array
+    {
+        return $this->pdo->query("SELECT * FROM $this->table WHERE year = 2017")->fetchAll();
     }
 
     public function selectByYear(int $year)
