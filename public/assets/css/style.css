@@ -969,33 +969,42 @@ hr {
 }
 
 /**Activities Style**/
-.title_act {
-    font-family: "Montserrat", Arial, sans-serif;
-    src: url("../fonts/Alien Robot.otf");
-    font-size: 1.5rem;
-}
+.back_act{
+    background-image: url("/assets/images/back_icone_act.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
 
+
+
+}
+.title_act {
+    color: black;
+    font-size: 2rem;
+}
 .ftco-section {
     padding: 5em 0;
     position: relative;
 }
-
 .fas {
-    font-size: 6em;
+    font-size: 80px;
+    color: #dc3545;
+    position:relative;
+
 }
-
-
+.fas:hover{
+    color:#dc3545;
+}
 .circle {
-    margin: 36px;
-    display: inline-block;
-    padding: 16px;
-    text-align: center;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    border: 2px solid #1d2087;
-}
 
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
 .circle::before,
 .circle::after {
     position: absolute;
@@ -1003,7 +1012,6 @@ hr {
     display: block;
     content: '';
 }
-
 .circle,
 .circle::before,
 .circle::after {
@@ -1013,21 +1021,19 @@ hr {
     -webkit-transition: all .4s;
     transition: all .4s;
 }
-
 .circle {
     position: relative;
     z-index: 2;
-    background-color: #687276;
-    border: 2px solid #5c5eae;
+    border: 3px solid white;
     color: #fff;
     line-height: 50px;
     overflow: hidden;
+    opacity: 1;
 }
-
 .circle:hover {
-    color: #fff;
+    color: #FFFFFF;
+    box-shadow: 0 0 30px rgba(0,0,0,0.9);
 }
-
 .circle::after {
     top: 0;
     left: 0;
@@ -1037,25 +1043,22 @@ hr {
     -webkit-transform: scale(.5);
     transform: scale(.5);
 }
-
 .circle:hover::after {
-    background: #5492E7;
+    background:#FFFFFF;
+
     border-radius: 50%;
     -webkit-transform: scale(.9);
     transform: scale(.9);
 }
-
 .circle2 {
-    opacity: 0.6;
+    opacity: 1;
 }
-
 .heading {
     color: #687276;
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: all ease-in-out 0.4s;
 }
-
 .heading:hover {
     color: black;
     border-color: black;
