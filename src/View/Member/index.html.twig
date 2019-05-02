@@ -1,0 +1,29 @@
+{% extends'userlayout.html.twig' %}
+
+{% block title %} - Membres du bureau{%  endblock %}
+
+{% block content %}
+    <div class=" container mt-5 mb-5">
+        <h4 class="title_member mb-4">NOTRE EQUIPE</h4>
+        <div class="row">
+            <table class="table table-striped text-center">
+                <thead class="bg-danger text-white">
+                <tr>
+                    <th>NOM</th>
+                    <th>FONCTION</th>
+                    <th>EMAIL</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="bg-light">
+                    {% for member in members %}
+                    <td class="">{{ member.lastname }} {{ member.firstname }}</td>
+                    <td class="">{{ member.fonction }}</td>
+                    <td class="">{{ member.email }}</td>
+                </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+{% endblock %}
