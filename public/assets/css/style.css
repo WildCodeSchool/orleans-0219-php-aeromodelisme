@@ -373,7 +373,7 @@ h1 {
 
 .title3 {
     text-align: center;
-    font-size: 3em;
+    font-size: 2.3rem;
     font-family: "Montserrat", Arial, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
@@ -386,6 +386,7 @@ h1 {
 
 .ftco-partner {
     padding: 2em 0;
+
 }
 
 .ftco-discount {
@@ -816,6 +817,9 @@ h1 {
     font-size: 1.1rem;
     color: white;
 }
+.footer .fas {
+    font-size: 1em;
+}
 .form-control {
     background-color: aliceblue;
 }
@@ -841,6 +845,7 @@ h1 {
     border: 1px solid white;
     border-radius: 8px;
     transition: ease-out 0.2s;
+    padding: 0.5em;
 }
 
 .footer-btn:hover {
@@ -1122,7 +1127,7 @@ hr {
   
 .heading:hover {
     color: black;
-    border-color: white;
+    border-color: black;
 }
 /**Member Style**/
 .title_member{
@@ -1236,4 +1241,15 @@ body {
     box-shadow: 0 0 0;
     filter: none;
     transition: all 0.3s ease-in;
+}
+
+a:hover .fa-linkedin {
+    color: white;
+}
+.ftco-section.video{
+    background-color:white ;
+}
+
+.event {
+    background-image: linear-gradient(to bottom, #ffeed3, white );
 }
