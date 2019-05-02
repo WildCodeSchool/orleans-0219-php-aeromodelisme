@@ -1022,13 +1022,14 @@ hr {
 /**End Weather style**/
 /**Activities Style**/
 
-.back_act{
+.back_act {
 
     background-image: url("/assets/images/back_icone_act.png");
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
+}
 
 .title_act {
     color: black;
@@ -1180,7 +1181,8 @@ body {
 }
 
 .btn-event{
-    font-size: 1.1rem;
+    font-size: 1rem;
+    border-radius: 50px;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
@@ -1218,7 +1220,8 @@ body {
 /*---------GALERIE----------*/
 
 .btn-archive{
-    font-size: 1.8rem;
+    font-size: 1.3rem;
+    border-radius: 50px;
 }
 
 .card-pin{
