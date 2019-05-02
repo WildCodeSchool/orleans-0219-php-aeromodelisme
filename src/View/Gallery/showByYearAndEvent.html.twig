@@ -5,16 +5,20 @@
     <div class="container py-5" id="gallery">
 
     <h3 class="title3 pb-4">Galerie</h3>
-    <form class="mb-5" method="get" action="/Gallery/showByYear/#gallery">
-        <div class="input-group">
+
+    <form class="mb-5" method="get" action="/Gallery/showByYearAndEvent/#gallery">
+        <div class="input-group mb-4 text-center">
             <select class="custom-select" name="year" aria-label="Choix entre les différentes années">
                 {% for year in years %}
                     <option value="{{ year.year }}" {% if year.year == actualYear %} selected {% endif %}>{{ year.year }}</option>
                 {% endfor %}
             </select>
-            <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="submit">S'envoler</button>
-            </div>
+        </div>
+        <div class="row justify-content-center">
+            {% for event in events %}
+                <button name="event" value="{{ event.event }}"
+                        class="btn btn-danger btn-event col-md-2 mb-4 py-3 mx-2">{{ event.event }}</button>
+            {% endfor %}
         </div>
     </form>
 

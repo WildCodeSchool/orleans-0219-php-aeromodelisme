@@ -15,7 +15,7 @@ class GalleryController extends AbstractController
 {
 
     /**
-     * Display home page
+     * Display gallery page
      *
      * @return string
      * @throws \Twig\Error\LoaderError
@@ -38,27 +38,43 @@ class GalleryController extends AbstractController
                                                                      'pictures2018' => $pictures2018,
                                                                      'pictures2017' => $pictures2017,
                                                                       'years' => $years,]);
+
+          
+
     }
 
-    public function showByYear()
+    /**
+     * Display gallery by year and event
+     *
+     * @return string
+     * @throws \Twig\Error\LoaderError
+     * @throws \Twig\Error\RuntimeError
+     * @throws \Twig\Error\SyntaxError
+     */
+    public function showByYearAndEvent()
     {
         $partnerManager = new PartnerManager();
         $partners = $partnerManager->selectAll();
 
         $galleryManager = new GalleryManager();
         $pictures = $galleryManager->selectAll();
-        $year=null;
+        $year = null;
+        $event = null;
 
-        if ($_SERVER['REQUEST_METHOD'] === 'GET' && !empty($_GET['year'])) {
+        if ($_SERVER['REQUEST_METHOD'] === 'GET' && !empty($_GET['year']) && !empty($_GET['event'])) {
             $year = $_GET['year'];
-            $pictures = $galleryManager->selectByYear($year);
+            $event = $_GET['event'];
+            $pictures = $galleryManager->selectByEventAndYear($year, $event);
         }
 
         $years = $galleryManager->selectAllYears();
-        return $this->twig->render('Gallery/showByYear.html.twig', ['years'=> $years,
-                                                                          'actualYear'=>$year,
-                                                                          'pictures'=> $pictures,
-                                                                          'partners' => $partners]);
+        $events = $galleryManager->selectAllEvents();
+        return $this->twig->render('Gallery/showByYearAndEvent.html.twig', ['years' => $years,
+            'actualYear' => $year,
+            'events' => $events,
+            'actualEvent' => $event,
+            'pictures' => $pictures,
+            'partners' => $partners]);
     }
 }
 
