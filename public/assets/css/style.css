@@ -749,8 +749,8 @@ h1 {
 }
 
 .staff .card .card-img-top {
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(100%);
+    -webkit-filter: grayscale(80%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(80%);
     transition: ease-out 0.2s;
 }
 
@@ -976,7 +976,7 @@ hr {
 }
 /**Weather style**/
 .weather{
-    background-image: linear-gradient(to bottom, #ffffff, #eff0f5, #dde1eb, #c8d4e0, #b2c7d5);
+    background-image: linear-gradient(to bottom, #ffffff, #eff0f5, #dde1eb, #c8d4e0, #6696ad);
 }
 
 .town{
@@ -1022,14 +1022,14 @@ hr {
 /**End Weather style**/
 /**Activities Style**/
 
-.back_act{
+.back_act {
 
     background-image: url("/assets/images/back_icone_act.png");
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-
+}
 .title_act {
     color: black;
     font-size: 2rem;
