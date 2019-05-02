@@ -16,13 +16,29 @@
         </div>
     </section>
 
-    <section class="ftco-section bg-grey py-5">
-        <h3 class="title3">La meteo</h3>
-
-        <a href="https://www.tameteo.com/meteo_Saint+Jean+de+la+Ruelle-Europe-France-Loiret--1-24379.html"
-           target="_blank" class="container embed-responsive text-center pt-5">
-            <img src="https://www.tameteo.com/wimages/fotof75579220d020d6c092045b67b573e74.png">
-        </a>
+    <section class="ftco-section bg-grey py-5 weather">
+        <h3 class="title3 mt-2 mb-2">La meteo</h3>
+        <div class="container">
+            <div class="row pb-3 pt-3">
+                <div class="col-12 town">{{ town }}</div>
+            </div>
+            <div class="row justify-content-center">
+                {% for key, day in days %}
+                    <div class="col-6 col-lg-2 today{{ key }}">
+                    <div class="row justify-content-center day">{{ day }}</div>
+                    <div class="row justify-content-center">
+                        <img class="w-75 h-75" src="assets/images/weather/{{ weatherimgs[loop.index0] }}.png"
+                             alt="{{ weathertitles[loop.index0] }}">
+                    </div>
+                    <div class="row justify-content-center mt-3 temp-min">Temp min. {{ tempsmin[loop.index0] }}</div>
+                    <div class="row justify-content-center temp-max">Temp max. {{ tempsmax[loop.index0] }}</div>
+                    <div class="row justify-content-center mt-3"><img class="w-25 h-25" src="assets/images/weather/wind/{{ windlogos[loop.index0] }}.png"></div>
+                    </div>
+                {% endfor %}
+            </div>
+            <a href="https://www.tameteo.com/meteo_Saint+Jean+de+la+Ruelle-Europe-France-Loiret--1-24379.html"
+               target="_blank"><img class="img-fluid  pt-3 w-15" src="assets/images/weather/logo2.png"></a>
+        </div>
     </section>
 
     <section class="ftco-section back_act">
