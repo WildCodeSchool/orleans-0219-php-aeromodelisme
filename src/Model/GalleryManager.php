@@ -42,8 +42,28 @@ class GalleryManager extends AbstractManager
         return $statement->fetchAll();
     }
 
-    public function selectAllYears() :array
+    /**
+     * @param int $year
+     * @param string $event
+     * @return array
+     */
+    public function selectByEventAndYear(int $year, string $event)
+    {
+        $statement = $this->pdo->prepare("SELECT * FROM $this->table WHERE year=:year and event=:event");
+        $statement->bindValue('year', $year, \PDO::PARAM_INT);
+        $statement->bindValue('event', $event, \PDO::PARAM_STR);
+        $statement->execute();
+
+        return $statement->fetchAll();
+    }
+
+    public function selectAllYears(): array
     {
         return $this->pdo->query("SELECT year FROM $this->table GROUP BY year")->fetchAll();
+    }
+
+    public function selectAllEvents(): array
+    {
+        return $this->pdo->query("SELECT event FROM $this->table GROUP BY event")->fetchAll();
     }
 }
