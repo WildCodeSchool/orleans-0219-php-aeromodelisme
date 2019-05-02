@@ -2,7 +2,7 @@
 
 {% block header %}
     <header>
-        <div class="jumbotron hero-wrap jumbotron-fluid">
+        <div class="jumbotron hero-wrap jumbotron-fluid mb-0">
             <div class="container-fluid">
                 <div class="row mt-5 mt-lg-0">
                 <h1 class="title col-lg-7 mt-md-1 pt-md-1 mt-lg-1 pt-lg-1 display-4">R.C.M.C.O</h1>
@@ -26,7 +26,7 @@
 
             <div class="collapse navbar-collapse" id="ftco-nav">
                 <ul class="navbar-nav mx-auto">
-                    <li class="nav-item active"><a href="/" class="nav-link">Accueil</a></li>
+                    <li class="nav-item active"><a href="/#ftco-navbar" class="nav-link">Accueil</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -39,9 +39,9 @@
                             <a class="dropdown-item" href="/Activities/index#indoor">Indoor</a>
                         </div>
                     </li>
-                    <li class="nav-item"><a href="#" class="nav-link">Ecolage</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Galerie</a></li>
-                    <li class="nav-item"><a href="/Inscription/index" class="nav-link">Inscription</a></li>
+                    <li class="nav-item"><a href="/Schooling/index#ftco-navbar" class="nav-link">Ecolage</a></li>
+                    <li class="nav-item"><a href="/Gallery/index#ftco-navbar" class="nav-link">Galerie</a></li>
+                    <li class="nav-item"><a href="/Inscription/index#ftco-navbar" class="nav-link">Inscription</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownMenuLink1" role="button"
                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -49,8 +49,8 @@
                         </a>
 
                         <div class="dropdown-menu shadow-sm border-0 rounded-0" aria-labelledby="navbarDropdownMenuLink1">
-                            <a class="dropdown-item" href="/Informations/index">Informations</a>
-                            <a class="dropdown-item" href="#">Membres du bureau</a>
+                            <a class="dropdown-item" href="/Informations/index#ftco-navbar">Informations</a>
+                            <a class="dropdown-item" href="/Member/members">Membres du bureau</a>
                         </div>
                     </li>
                     <li class="nav-item"><a href="/#form-footer" class="nav-link">Contact</a></li>
@@ -67,25 +67,26 @@
 {% endblock %}
 
 {% block footer %}
-    <footer class="footer pt-5 pb-3">
-        <div class="overlay"></div>
-        <div class="container-fluid">
-            <div class="row justify-content-between pr-4 pl-4">
-                <div class="info col-12 col-lg-2">
-                    <address><h4>Adresses</h4>
-                    <h5>Nos locaux :</h5>
+    <footer class="footer bg-danger pt-5 pb-3">
+        <div class="footer-container container-fluid">
+            <div class="form row justify-content-between pr-4 pl-4 pb-4">
+                <address class="text-center info col-12 col-xl-2">
+                    <h5 class="align-middle">Nos locaux :</h5>
                     Mairie de Saint Jean de la Ruelle<br>
                     71 Rue Charles Beauhaire<br> 45140 Saint-Jean-de-la-Ruelle <br><br>
                     <h5>Notre terrain :</h5>
                     Rue des Queues de Forêt<br>
-                    45140 Ingré<br><br>
+                        45140 Ingré<br><br>
                     <h5>Le gymnase :</h5>
                     Gymnase des 3 fontaines<br>
                     Centre Commercial Auchan<br>
-                        Saint Jean de la Ruelle</address>
-                </div>
+                        Saint Jean de la Ruelle
+                </address>
+
+                <div class="col-12 col-xl-4 embed-responsive embed-responsive-4by3">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7563.623850719586!2d1.7710148156885803!3d47.91423451652312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e4f2022a3a602b%3A0x1347f5b19f92128e!2sTerrain+Aero-modelisme+-+RCMCO!5e0!3m2!1sfr!2sfr!4v1555497893464!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-                <form class="col-12 col-lg-4">
+                </div>
+                    <form class="col-12 col-xl-4">
                     <div class="form-row">
                         <div id="form-footer" class="form-group col-md-6">
                             <label for="inputName4">Nom</label>
@@ -111,16 +112,16 @@
                     </div>
                     <div class="form-group">
                         <label for="exampleFormControlTextarea1">Message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" required></textarea>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" required></textarea>
                     </div>
-                    <button type="submit" class="footer-btn btn-primary">Envoyer</button>
+                    <button type="submit" class="footer-btn btn-danger">Envoyer</button>
                 </form>
             </div>
             <hr class="bg-grey mt-2">
             <div class="row justify-content-center">
-                <div class="signature col-12 col-md-6">
-                    <p> The wild'n roses : <a href="#">Jean-Christophe Roger</a> - <a href="#">Nawal Zakarya</a> - <a href="#">Vincent Ostyn</a> - <a href="#">Manuel Leger</a> - <a href="#">Emilie Serre</a> | <a href="/legal/legalmentions">Mentions légales</a></p>
-                </div>
+                 <div class="signature col-12 col-md-8">
+                    <p> The guns n' wilders : <a href="#">Jean-Christophe Roger</a> - <a href="#">Nawal Zakarya</a> - <a href="#">Vinvent Ostyn</a> - <a href="#">Manuel Leger</a> - <a href="#">Emilie Serre</a> | <a href="#">Mentions légales</a></p>
+                 </div>
             </div>
         </div>
     </footer>

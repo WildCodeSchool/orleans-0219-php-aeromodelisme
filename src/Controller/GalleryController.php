@@ -42,6 +42,9 @@ class GalleryController extends AbstractController
 
     public function showByYear()
     {
+        $partnerManager = new PartnerManager();
+        $partners = $partnerManager->selectAll();
+
         $galleryManager = new GalleryManager();
         $pictures = $galleryManager->selectAll();
         $year=null;
@@ -54,7 +57,8 @@ class GalleryController extends AbstractController
         $years = $galleryManager->selectAllYears();
         return $this->twig->render('Gallery/showByYear.html.twig', ['years'=> $years,
                                                                           'actualYear'=>$year,
-                                                                          'pictures'=> $pictures]);
+                                                                          'pictures'=> $pictures,
+                                                                          'partners' => $partners]);
     }
 }
 
