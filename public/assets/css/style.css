@@ -1154,6 +1154,10 @@ table th {
     font-size: 1.25em;
 }
 
+.btn-event{
+    font-size: 1.1rem;
+}
+
 .carousel-control-next-icon, .carousel-control-prev-icon {
     filter: invert(100%);
 }
