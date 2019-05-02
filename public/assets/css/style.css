@@ -1034,6 +1034,8 @@ hr {
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(83, 83, 83, 0.5);
+    z-index: 1;
 }
 
 .title_act {
@@ -1251,5 +1253,5 @@ a:hover .fa-linkedin {
 }
 
 .event {
-    background-image: linear-gradient(to bottom, #ffeed3, white );
+    background-image: linear-gradient(to bottom, #ffeed3 5%, white 15%);
 }
