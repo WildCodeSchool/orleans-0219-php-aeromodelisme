@@ -1,5 +1,3 @@
-/***** Under this line => Modification style for bootstrap*************/
-
 .btn {
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
 }
@@ -8,9 +6,6 @@
     margin-bottom: 15px;
 }
 
-/***** Under this line Personal Specification Style *************/
-
-/****General style ****/
 body {
     font-family: "Montserrat", Arial, sans-serif;
     background: #fff;
@@ -115,12 +110,53 @@ h1, h2, h3, h4, h5,
 
 /***** Activities page *****/
 
+.plane1, .plane2, .plane3, .helico2, .glide2, .indoor3{
+    width: 70%;
+}
+
+.plane1{
+    margin-right: 20%;
+}
+
+.plane2{
+    margin-left: 20%;
+}
+
+.glide1, .glide2{
+    margin-left: 18%;
+    width: 72%;
+}
+
+.glide3{
+    margin-right: 20%;
+    width: 72%;
+}
+
+.helico1, .helico3{
+    width: 74.5%;
+}
+
+.helico2{
+    width: 74%;
+    margin-top: 1%;
+    margin-left: 15.5%;
+}
+
+.indoor1, .indoor2{
+    width: 76%;
+    margin-left: 13%;
+
+}
+
+.indoor3{
+    width: 76.8%;
+    margin-right: 13%;
+}
+
 .activitiesTitle{
     justify-content: center;
     margin-top: 3%;
     text-align: center;
-    margin-bottom: 5%;
-    font-family: "Montserrat", Arial, sans-serif;
     font-size: calc(2vw + 24pt);
     color: #000000;
 }
@@ -130,40 +166,57 @@ h1, h2, h3, h4, h5,
     margin-bottom: 3vw;
 }
 
-.activitieTitlePlane{
-    font-family: "Montserrat", Arial, sans-serif;
-    margin-top: 3vw;
-    color: red;
+
+
+.activitieTitlePlane, .activitieTitleHelico{
+    color: #dc3545;
+    text-align: center;
+    font-size: calc(1.5vw + 20pt);
 }
 
-.activitieTitleGlider {
-    font-family: "Montserrat", Arial, sans-serif;
-    margin-top: 3vw;
+.activitieTitleGlider, .activitieTitleIndoor {
+    text-align: center;
     color: #0f3d7f;
+    font-size: calc(1.5vw + 20pt);
+    width: 70%;
 }
 
-.activitieTitleHelico {
-    font-family: "Montserrat", Arial, sans-serif;
-    margin-top: 3vw;
-    color: red;
-}
 
-.activitieTitleIndoor {
-    font-family: "Montserrat", Arial, sans-serif;
-    margin-top: 3vw;
-    color: #0f3d7f;
-}
-
-.textActivities{
-    font-size: calc(0.2vw + 12pt);
+.textActivitiesPlane{
+    font-size: calc(0.07vw + 12pt);
     color: black;
+    width: 70%;
+    margin-left: 20%;
+}
+
+.textActivitiesHelico{
+    font-size: calc(0.07vw + 12pt);
+    color: black;
+    width: 70%;
+    margin-left: 10%;
+}
+.textActivitiesGlide
+{
+    font-size: calc(0.07vw + 12pt);
+    color: black;
+    width: 70%;
+    margin-right: 20%;
+
+
+}
+
+.textActivitiesIndoor{
+
+    font-size: calc(0.07vw + 12pt);
+    color: black;
+    width: 70%;
+    margin-right: 20%;
+}
 }
 
 .cardActivities1{
     margin-top: 3vw;
 }
-
-/***** Informations style *****/
 
 .informationTitle{
     justify-content: center;
@@ -214,7 +267,38 @@ h1, h2, h3, h4, h5,
     margin-top: 5%;
 }
 
-/*****Class ftco style *****/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 92px;
+    padding:  5px;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+}
+
+.txtshadow{
+    color: #000;
+    text-shadow: 0 0 1px #3D3D3D;
+}
+
+#canvas-container{
+    text-align: center;
+}
+
+#canvas-container2{
+    text-align: center;
+}
+
+#canvas-container3{
+    text-align: center;
+}
 
 .navbar {
     position: sticky;
@@ -332,14 +416,11 @@ h1, h2, h3, h4, h5,
     color: #407dde;
 }
 
-/*******Navbar Style *******/
-
 .navbar-toggler i {
     color: #407dde;
     font-size: 20px;
 }
 
-/******Class Hero style *****/
 .hero-wrap {
     width: 100%;
     height: 700px;
@@ -349,8 +430,6 @@ h1, h2, h3, h4, h5,
     background-repeat: no-repeat;
     background-position: center center;
 }
-
-/******Slider Style *****/
 
 .slider-text {
     color: #fff;
@@ -409,8 +488,6 @@ h1, h2, h3, h4, h5,
     color: #407dde;
 }
 
-/*******Background Style *****/
-
 .bg-grey {
     background-color: #f3f3f3;
 }
@@ -418,8 +495,6 @@ h1, h2, h3, h4, h5,
 .bg-primary {
     background: #407dde;
 }
-
-/******Button style *****/
 
 .btn {
     cursor: pointer;
@@ -493,8 +568,6 @@ h1, h2, h3, h4, h5,
     color: #fff;
 }
 
-/*******Services style *****/
-
 .services .icon span {
     margin: 0 auto;
     font-size: 40px;
@@ -506,8 +579,6 @@ h1, h2, h3, h4, h5,
     margin-bottom: 20px;
     text-transform: uppercase;
 }
-
-/****Work style *****/
 
 .work-category span a {
     color: #b3b3b3;
@@ -570,8 +641,6 @@ h1, h2, h3, h4, h5,
     opacity: 1;
 }
 
-/****Partner style ****/
-
 .partner .partner-entry {
     opacity: .3;
     transition: all 0.3s ease;
@@ -580,8 +649,6 @@ h1, h2, h3, h4, h5,
 .partner .partner-entry:hover {
     opacity: 1;
 }
-
-/*****Pricing Style *****/
 
 .pricing-entry {
     border: 1px solid #f0f0f0;
@@ -672,7 +739,6 @@ h1, h2, h3, h4, h5,
     color: #fff;
 }
 
-/******Class staff Style****/
 .staff {
     margin-bottom: 30px;
 }
@@ -706,8 +772,6 @@ h1, h2, h3, h4, h5,
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
     transition: all 0.2s ease-in;
 }
-
-/*****Class discount style ****/
 
 .discount {
     color: rgba(255, 255, 255, 0.8);
@@ -914,37 +978,36 @@ hr {
 /**Activities Style**/
 
 .back_act{
-    background-image: url("/assets/images/back_icone_act.jpeg");
+
+    background-image: url("/assets/images/back_icone_act.png");
     background-size:cover;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    opacity: 0.4;
 
+.title_act {
+    color: black;
+    font-size: 2rem;
 }
-.title_act{
-    font-family: "Montserrat", Arial, sans-serif;
-    color: white;
-    font-size: 1.5rem;
-}
+
 .ftco-section {
     padding: 5em 0;
     position: relative;
 
 }
-
 .fas {
-
     font-size: 80px;
     color: #dc3545;
     position:relative;
 }
-.fas:hover{
-   color:#dc3545;
-}
 
+.fas:hover
+  {
+    color:#dc3545;
+}
+  
 .circle {
-    margin: 36px;
+
     display: inline-block;
     padding: 10px;
     text-align: center;
@@ -952,10 +1015,7 @@ hr {
     height: 150px;
     border-radius: 50%;
 
-
-
 }
-
 .circle::before,
 .circle::after {
     position: absolute;
@@ -964,7 +1024,6 @@ hr {
     content: '';
 
 }
-
 .circle,
 .circle::before,
 .circle::after {
@@ -974,7 +1033,6 @@ hr {
     -webkit-transition: all .4s;
     transition: all .4s;
 }
-
 .circle {
     position: relative;
     z-index: 2;
@@ -984,12 +1042,10 @@ hr {
     overflow: hidden;
     opacity: 1;
 }
-
 .circle:hover {
     color: #FFFFFF;
     box-shadow: 0 0 30px rgba(0,0,0,0.9);
 }
-
 .circle::after {
     top: 0;
     left: 0;
@@ -999,29 +1055,25 @@ hr {
     -webkit-transform: scale(.5);
     transform: scale(.5);
 }
-
 .circle:hover::after {
 
     background:#FFFFFF;
-
-    
-
     border-radius: 50%;
     -webkit-transform: scale(.9);
     transform: scale(.9);
 }
-
+  
 .circle2 {
     opacity: 1;
 }
-
+  
 .heading {
     color: #687276;
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: all ease-in-out 0.4s;
 }
-
+  
 .heading:hover {
     color: black;
     border-color: white;
@@ -1080,6 +1132,10 @@ body {
 .qualif {
     text-transform: uppercase;
     font-size: 1.25em;
+}
+
+.btn-event{
+    font-size: 1.1rem;
 }
 
 .carousel-control-next-icon, .carousel-control-prev-icon {
