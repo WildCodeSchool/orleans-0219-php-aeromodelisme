@@ -913,17 +913,18 @@ hr {
 
 /**Activities Style**/
 .back_act{
-    background-image: url("/assets/images/back_icone_act.jpeg");
+    background-image: url("/assets/images/back_icone_act.png");
     background-size:cover;
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    opacity: 0.4;
+
+
 
 }
 .title_act {
-    color: white;
-    font-size: 1.5rem;
+    color: black;
+    font-size: 2rem;
 }
 .ftco-section {
     padding: 5em 0;
@@ -1003,7 +1004,7 @@ hr {
 }
 .heading:hover {
     color: black;
-    border-color: white;
+    border-color: black;
 }
 
 
